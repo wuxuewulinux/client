@@ -110,7 +110,7 @@ public class NetIO {
 
         //先处理头部，把头部字节数转换成网络字节序
         short x = (short)buff.Length;
-        short b = System.Net.IPAddress.HostToNetworkOrder(x);                        //把x转成相应的大端字节数 
+        ushort b = (ushort)System.Net.IPAddress.HostToNetworkOrder(x);                        //把x转成相应的大端字节数 
         byte[] intBuff = System.BitConverter.GetBytes(b);                            //这样直接取到的就是大端字节序字节数组。大端字节序就是网络字节序
 
         //把头部和包体字节保存在一个数组中。
@@ -154,13 +154,13 @@ public class NetIO {
     }
     public static byte[] decode(ref List<byte> cache)
     {
-        if (cache.Count < sizeof(short)) return null;
+        if (cache.Count < sizeof(ushort)) return null;
 
         MemoryStream ms = new MemoryStream(cache.ToArray());//创建内存流对象，并将缓存数据写入进去
         BinaryReader br = new BinaryReader(ms);//二进制读取流
-        short length = br.ReadInt16();//从缓存中读取int型消息体长度
+        ushort length = br.ReadUInt16();//从缓存中读取int型消息体长度
         //如果消息体长度 大于缓存中数据长度 说明消息没有读取完 等待下次消息到达后再次处理
-        if (length > (short)(ms.Length - ms.Position))
+        if (length > (ushort)(ms.Length - ms.Position))
         {
             return null;
         }

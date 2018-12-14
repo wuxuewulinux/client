@@ -5,8 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{12F44184-A422-5F27-22E6-507969043F15}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -47,136 +46,136 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\HandlerList.cs" />
-    <Compile Include="Assets\Script\IHandler.cs" />
-    <Compile Include="Assets\Script\LoginHandler.cs" />
-    <Compile Include="Assets\Script\LoginScreenWork.cs" />
-    <Compile Include="Assets\Script\NetIO.cs" />
-    <Compile Include="Assets\Script\NetMessageUtil.cs" />
-    <Compile Include="Assets\Script\RoleData.cs" />
-    <Compile Include="Assets\Script\WarrningManager.cs" />
-    <Compile Include="Assets\Script\WarrningModel.cs" />
-    <Compile Include="Assets\Script\WarrningWindow.cs" />
-    <Compile Include="Assets\Script\config\MingChengConfig.cs" />
-    <Compile Include="Assets\Script\config\ServerConfig.cs" />
-    <Compile Include="Assets\Script\config\logicconfigmanager.cs" />
-    <Compile Include="Assets\proto\CSmsg.cs" />
-    <Compile Include="Assets\proto\DBmsg.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\AbstractBuilder.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\AbstractBuilderLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\AbstractMessage.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\AbstractMessageLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ByteArray.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ByteString.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\CodedInputStream.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\CodedOutputStream.ComputeSize.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\CodedOutputStream.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Collections\Dictionaries.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Collections\Enumerables.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Collections\IPopsicleList.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Collections\Lists.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Collections\PopsicleList.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Collections\ReadOnlyDictionary.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\CustomSerialization.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Delegates.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\DescriptorProtos\CSharpOptions.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\DescriptorProtos\DescriptorProtoFile.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\DescriptorProtos\IDescriptorProto.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\DescriptorProtos\PartialClasses.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\DescriptorBase.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\DescriptorPool.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\DescriptorUtil.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\DescriptorValidationException.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\EnumDescriptor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\EnumValueDescriptor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\FieldDescriptor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\FieldMappingAttribute.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\FieldType.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\FileDescriptor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\IDescriptor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\IndexedDescriptorBase.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\MappedType.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\MessageDescriptor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\MethodDescriptor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\PackageDescriptor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\ServiceDescriptor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\DynamicMessage.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\EnumLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ExtendableBuilder.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ExtendableBuilderLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ExtendableMessage.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ExtendableMessageLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ExtensionInfo.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ExtensionRegistry.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ExtensionRegistryLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\FieldAccessorTable.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\IFieldAccessor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\ReflectionUtil.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\RepeatedEnumAccessor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\RepeatedMessageAccessor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\RepeatedPrimitiveAccessor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\SingleEnumAccessor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\SingleMessageAccessor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\SinglePrimitiveAccessor.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FieldSet.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\FrameworkPortability.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\GeneratedBuilder.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\GeneratedBuilderLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\GeneratedExtensionBase.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\GeneratedExtensionLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\GeneratedMessage.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\GeneratedMessageLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\GeneratedRepeatExtension.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\GeneratedSingleExtension.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\IBuilder.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\IBuilderLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ICodedInputStream.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ICodedOutputStream.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\IMessage.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\IMessageLite.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\IRpcChannel.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\IRpcController.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\IRpcDispatch.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\IService.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\InvalidProtocolBufferException.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\MessageStreamIterator.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\MessageStreamWriter.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\MessageUtil.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\NameHelpers.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\Properties\AssemblyInfo.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\RpcUtil.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\SortedList.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\TextFormat.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\TextGenerator.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\TextTokenizer.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\ThrowHelper.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\UninitializedMessageException.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\UnknownField.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\UnknownFieldSet.cs" />
-    <Compile Include="Assets\proto\ProtocolBuffers\WireFormat.cs" />
-    <None Include="Assets\Script\config\xml\server_mysql.xml" />
-    <None Include="Assets\Script\config\xml\mingcheng.xml" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.HoloLens">
-      <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.VR">
-      <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
-    </Reference>
+     <Compile Include="Assets\Script\HandlerList.cs" />
+     <Compile Include="Assets\Script\IHandler.cs" />
+     <Compile Include="Assets\Script\LoginHandler.cs" />
+     <Compile Include="Assets\Script\LoginScreenWork.cs" />
+     <Compile Include="Assets\Script\NetIO.cs" />
+     <Compile Include="Assets\Script\NetMessageUtil.cs" />
+     <Compile Include="Assets\Script\RoleData.cs" />
+     <Compile Include="Assets\Script\WarrningManager.cs" />
+     <Compile Include="Assets\Script\WarrningModel.cs" />
+     <Compile Include="Assets\Script\WarrningWindow.cs" />
+     <Compile Include="Assets\Script\config\MingChengConfig.cs" />
+     <Compile Include="Assets\Script\config\ServerConfig.cs" />
+     <Compile Include="Assets\Script\config\logicconfigmanager.cs" />
+     <Compile Include="Assets\proto\CSmsg.cs" />
+     <Compile Include="Assets\proto\DBmsg.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\AbstractBuilder.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\AbstractBuilderLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\AbstractMessage.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\AbstractMessageLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ByteArray.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ByteString.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\CodedInputStream.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\CodedOutputStream.ComputeSize.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\CodedOutputStream.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Collections\Dictionaries.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Collections\Enumerables.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Collections\IPopsicleList.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Collections\Lists.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Collections\PopsicleList.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Collections\ReadOnlyDictionary.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\CustomSerialization.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Delegates.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\DescriptorProtos\CSharpOptions.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\DescriptorProtos\DescriptorProtoFile.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\DescriptorProtos\IDescriptorProto.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\DescriptorProtos\PartialClasses.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\DescriptorBase.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\DescriptorPool.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\DescriptorUtil.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\DescriptorValidationException.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\EnumDescriptor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\EnumValueDescriptor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\FieldDescriptor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\FieldMappingAttribute.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\FieldType.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\FileDescriptor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\IDescriptor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\IndexedDescriptorBase.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\MappedType.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\MessageDescriptor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\MethodDescriptor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\PackageDescriptor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Descriptors\ServiceDescriptor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\DynamicMessage.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\EnumLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ExtendableBuilder.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ExtendableBuilderLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ExtendableMessage.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ExtendableMessageLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ExtensionInfo.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ExtensionRegistry.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ExtensionRegistryLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\FieldAccessorTable.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\IFieldAccessor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\ReflectionUtil.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\RepeatedEnumAccessor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\RepeatedMessageAccessor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\RepeatedPrimitiveAccessor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\SingleEnumAccessor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\SingleMessageAccessor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FieldAccess\SinglePrimitiveAccessor.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FieldSet.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\FrameworkPortability.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\GeneratedBuilder.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\GeneratedBuilderLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\GeneratedExtensionBase.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\GeneratedExtensionLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\GeneratedMessage.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\GeneratedMessageLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\GeneratedRepeatExtension.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\GeneratedSingleExtension.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\IBuilder.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\IBuilderLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ICodedInputStream.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ICodedOutputStream.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\IMessage.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\IMessageLite.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\IRpcChannel.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\IRpcController.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\IRpcDispatch.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\IService.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\InvalidProtocolBufferException.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\MessageStreamIterator.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\MessageStreamWriter.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\MessageUtil.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\NameHelpers.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\RpcUtil.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\SortedList.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\TextFormat.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\TextGenerator.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\TextTokenizer.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\ThrowHelper.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\UninitializedMessageException.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\UnknownField.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\UnknownFieldSet.cs" />
+     <Compile Include="Assets\proto\ProtocolBuffers\WireFormat.cs" />
+     <None Include="Assets\Script\config\xml\server_mysql.xml" />
+     <None Include="Assets\Script\config\xml\mingcheng.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>E:/my_unity3d/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -186,4 +185,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>
