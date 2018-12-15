@@ -163,6 +163,75 @@ message CSBagRsp
 
 /////////////////////////////////////////////////////////////////////////////////////////////背包模块///////////////////////////////////////////////////////////////////
 
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////装饰背包模块/////////////////////////////////////////////////////////////////
+
+enum CSDecorateBagCmd
+{
+	//填写每个模块的子功能枚举ID号
+	
+	CSDecorateBagCmd_Fetch = 1;								//装饰背包界面展现功能 
+			  				
+}
+
+message CSDecorateBagFetchReq
+{
+	optional uint32 type = 1 ; 						//装饰背包类型，因为有很多不同种类的装饰背包
+}
+
+message CSDecorateBagGridInfo
+{
+	optional uint32	ItemId = 1; 					//装饰物品ID
+	optional uint32 type = 2; 						//装饰背包的种类
+	optional uint64 EndTime = 3;					//装饰物品的结束时间
+}
+
+message CSDecorateBagInfo
+{
+	repeated CSDecorateBagGridInfo DecorateGridInfo = 1; 			
+}
+
+message CSDecorateBagFetchRsp
+{
+	optional uint32 type = 1;
+	optional CSDecorateBagInfo DecorateBagInfo = 2; 				
+}
+
+
+message CSDecorateBagReqParam
+{
+	optional CSDecorateBagFetchReq FetchReq = 1 ;
+}
+
+message CSDecorateBagRspParam
+{
+	optional CSDecorateBagFetchRsp FetchRsp = 1 ;
+}
+
+message CSDecorateBagReq
+{
+	required CSDecorateBagCmd cmd = 1 ;
+	optional CSDecorateBagReqParam reqParam = 2;
+}
+
+message CSDecorateBagRsp
+{
+	optional int32 result = 1 ;								
+	required CSDecorateBagCmd cmd = 2 ;
+	optional CSDecorateBagRspParam  rspParam = 3 ;
+}
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////装饰背包模块/////////////////////////////////////////////////////////////////
+
+
+
+
 enum CSMsgID
 {
 	//填写模块的ID号
@@ -173,11 +242,11 @@ enum CSMsgID
 	
 	CS_MSGID_BAG = 2;										//背包模块
 	
+	CS_MSGID_DecorateBAG = 3;								//装饰背包模块		
 	//如果还有别的模块就这里进行扩展
 	
-	CS_MSGID_MAX = 3;
-}
-
+	CS_MSGID_MAX = 4;
+} 
 
 message CSMsgBody
 {
@@ -188,6 +257,9 @@ message CSMsgBody
 	
 	optional CSBagReq BagReq = 3;
 	optional CSBagRsp BagRsp = 4;
+	
+	optional CSDecorateBagReq DecorateBagReq = 5;
+	optional CSDecorateBagRsp DecorateBagRsp = 6;
 }
 
 

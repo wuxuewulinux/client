@@ -28,7 +28,7 @@ message DBDecorateItem					//装饰结构
 {
     optional uint32 id = 1; 			// 装饰 ID
     optional uint32 type = 2; 			// 装饰划分的类型
-	optional uint32 EndTime = 3;		//装饰结束的时间
+	optional uint64 EndTime = 3;		//装饰结束的时间
 }
 
 message DBDecorateItemList				//装饰结构数组
