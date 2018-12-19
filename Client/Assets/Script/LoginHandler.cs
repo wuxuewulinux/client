@@ -8,7 +8,7 @@ public class LoginHandler : MonoBehaviour ,IHandler{                        //�
 
     public void MessageReceive(CSMsg model)                                 //封装接口函数
     {
-        switch (model.Body.RegisterLoginReq.Cmd)                            //访问模块的子功能
+        switch (model.Body.RegisterLoginRsp.Cmd)                            //访问模块的子功能
         {
             case CSRegisterLoginCmd.CSRegisterLoginCmd_Login:               // 登录模块          
                  OnLogin(model);                                            //登录模块要处理的逻辑

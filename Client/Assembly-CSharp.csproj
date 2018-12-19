@@ -46,6 +46,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\BagHandler.cs" />
+     <Compile Include="Assets\Script\BagWork.cs" />
+     <Compile Include="Assets\Script\DecorateBagHandler.cs" />
+     <Compile Include="Assets\Script\DecorateBagWork.cs" />
      <Compile Include="Assets\Script\HandlerList.cs" />
      <Compile Include="Assets\Script\IHandler.cs" />
      <Compile Include="Assets\Script\LoginHandler.cs" />

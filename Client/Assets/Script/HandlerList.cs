@@ -26,7 +26,10 @@ public class HandlerList : MonoBehaviour
 
          if (uiMsgID == CSMsgID.CS_MSGID_RegisterLogin)
              return m_oRegisterLoginHandler;
-
+         else if (uiMsgID == CSMsgID.CS_MSGID_DecorateBAG)
+             return m_oDecorateBagHandler;
+         else if (uiMsgID == CSMsgID.CS_MSGID_BAG)
+             return m_oBagHandler;
          //如果增加模块就在这里以下进行添加
 
          return null;
@@ -36,7 +39,11 @@ public class HandlerList : MonoBehaviour
 
      //把你模块的Handler类添加到这里,以下的对象不实例化，从unity拖动组件赋值到对应的handler模块对象上
 
-     public LoginHandler m_oRegisterLoginHandler;              //登陆注册模块handler
+     public LoginHandler m_oRegisterLoginHandler;               //登陆注册模块handler
+
+     public BagHandler m_oBagHandler;                           //背包模块handler
+
+     public DecorateBagHandler m_oDecorateBagHandler;          //装饰背包模块handler
 
      
     }

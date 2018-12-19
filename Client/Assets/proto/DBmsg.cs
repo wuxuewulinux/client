@@ -20,6 +20,22 @@ public static partial class DBmsg {
   internal static pb::FieldAccess.FieldAccessorTable<global::DBBagGridList, global::DBBagGridList.Builder> internal__static_DBBagGridList__FieldAccessorTable;
   internal static pbd::MessageDescriptor internal__static_DBBagInfo__Descriptor;
   internal static pb::FieldAccess.FieldAccessorTable<global::DBBagInfo, global::DBBagInfo.Builder> internal__static_DBBagInfo__FieldAccessorTable;
+  internal static pbd::MessageDescriptor internal__static_DBDecorateItem__Descriptor;
+  internal static pb::FieldAccess.FieldAccessorTable<global::DBDecorateItem, global::DBDecorateItem.Builder> internal__static_DBDecorateItem__FieldAccessorTable;
+  internal static pbd::MessageDescriptor internal__static_DBDecorateItemList__Descriptor;
+  internal static pb::FieldAccess.FieldAccessorTable<global::DBDecorateItemList, global::DBDecorateItemList.Builder> internal__static_DBDecorateItemList__FieldAccessorTable;
+  internal static pbd::MessageDescriptor internal__static_DBDecorateBagInfo__Descriptor;
+  internal static pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagInfo, global::DBDecorateBagInfo.Builder> internal__static_DBDecorateBagInfo__FieldAccessorTable;
+  internal static pbd::MessageDescriptor internal__static_DBDecorateBagInfoList__Descriptor;
+  internal static pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagInfoList, global::DBDecorateBagInfoList.Builder> internal__static_DBDecorateBagInfoList__FieldAccessorTable;
+  internal static pbd::MessageDescriptor internal__static_DBDecorateBagModuleInfo__Descriptor;
+  internal static pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagModuleInfo, global::DBDecorateBagModuleInfo.Builder> internal__static_DBDecorateBagModuleInfo__FieldAccessorTable;
+  internal static pbd::MessageDescriptor internal__static_DBDecorateBagVIPItem__Descriptor;
+  internal static pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagVIPItem, global::DBDecorateBagVIPItem.Builder> internal__static_DBDecorateBagVIPItem__FieldAccessorTable;
+  internal static pbd::MessageDescriptor internal__static_DBDecorateBagVIPList__Descriptor;
+  internal static pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagVIPList, global::DBDecorateBagVIPList.Builder> internal__static_DBDecorateBagVIPList__FieldAccessorTable;
+  internal static pbd::MessageDescriptor internal__static_DBDecorateBagVIPInfo__Descriptor;
+  internal static pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagVIPInfo, global::DBDecorateBagVIPInfo.Builder> internal__static_DBDecorateBagVIPInfo__FieldAccessorTable;
   internal static pbd::MessageDescriptor internal__static_DBRoleInfo__Descriptor;
   internal static pb::FieldAccess.FieldAccessorTable<global::DBRoleInfo, global::DBRoleInfo.Builder> internal__static_DBRoleInfo__FieldAccessorTable;
   #endregion
@@ -35,10 +51,24 @@ public static partial class DBmsg {
           "CgtEQm1zZy5wcm90byIkCglEQkJhZ0dyaWQSCgoCSUQYASABKA0SCwoDTnVt", 
           "GAIgASgNIioKDURCQmFnR3JpZExpc3QSGQoFR3JpZHMYASADKAsyCi5EQkJh", 
           "Z0dyaWQiLQoJREJCYWdJbmZvEiAKCEdyaWRMaXN0GAEgASgLMg4uREJCYWdH", 
-          "cmlkTGlzdCKIAQoKREJSb2xlSW5mbxILCgNVSUQYASABKAQSDAoETmFtZRgC", 
-          "IAEoCRINCgVMZXZlbBgDIAEoDRIMCgRSYW5rGAQgASgNEhIKCkxldmVsRXhw", 
-          "ZXIYBSABKA0SEQoJUmFua0V4cGVyGAYgASgNEhsKB0JhZ0luZm8YByABKAsy", 
-        "Ci5EQkJhZ0luZm8="));
+          "cmlkTGlzdCI7Cg5EQkRlY29yYXRlSXRlbRIKCgJpZBgBIAEoDRIMCgR0eXBl", 
+          "GAIgASgNEg8KB0VuZFRpbWUYAyABKAQiPAoSREJEZWNvcmF0ZUl0ZW1MaXN0", 
+          "EiYKDURlY29yYXRlR3JpZHMYASADKAsyDy5EQkRlY29yYXRlSXRlbSI9ChFE", 
+          "QkRlY29yYXRlQmFnSW5mbxIoCgtCYWdHcmlkTGlzdBgBIAEoCzITLkRCRGVj", 
+          "b3JhdGVJdGVtTGlzdCJEChVEQkRlY29yYXRlQmFnSW5mb0xpc3QSKwoPRGVj", 
+          "b3JhdGVCYWdMaXN0GAEgAygLMhIuREJEZWNvcmF0ZUJhZ0luZm8iYAoXREJE", 
+          "ZWNvcmF0ZUJhZ01vZHVsZUluZm8SMwoTRGVjb3JhdGVCYWdJbmZvTGlzdBgB", 
+          "IAEoCzIWLkRCRGVjb3JhdGVCYWdJbmZvTGlzdBIQCghUeXBlTGlzdBgCIAMo", 
+          "DSI0ChREQkRlY29yYXRlQmFnVklQSXRlbRINCgVncmFkZRgBIAEoDRINCgVl", 
+          "eHBlchgCIAEoDSJCChREQkRlY29yYXRlQmFnVklQTGlzdBIqCgtWSVBJdGVt", 
+          "TGlzdBgBIAMoCzIVLkRCRGVjb3JhdGVCYWdWSVBJdGVtIkIKFERCRGVjb3Jh", 
+          "dGVCYWdWSVBJbmZvEioKC1ZJUExpc3RJbmZvGAEgASgLMhUuREJEZWNvcmF0", 
+          "ZUJhZ1ZJUExpc3Qi6QEKCkRCUm9sZUluZm8SCwoDVUlEGAEgASgEEgwKBE5h", 
+          "bWUYAiABKAkSDQoFTGV2ZWwYAyABKA0SDAoEUmFuaxgEIAEoDRISCgpMZXZl", 
+          "bEV4cGVyGAUgASgNEhEKCVJhbmtFeHBlchgGIAEoDRIbCgdCYWdJbmZvGAcg", 
+          "ASgLMgouREJCYWdJbmZvEjcKFURlY29yYXRlQmFnTW9kdWxlSW5mbxgIIAEo", 
+          "CzIYLkRCRGVjb3JhdGVCYWdNb2R1bGVJbmZvEiYKB1ZJUEluZm8YCSABKAsy", 
+        "FS5EQkRlY29yYXRlQmFnVklQSW5mbw=="));
     pbd::FileDescriptor.InternalDescriptorAssigner assigner = delegate(pbd::FileDescriptor root) {
       descriptor = root;
       internal__static_DBBagGrid__Descriptor = Descriptor.MessageTypes[0];
@@ -53,10 +83,42 @@ public static partial class DBmsg {
       internal__static_DBBagInfo__FieldAccessorTable = 
           new pb::FieldAccess.FieldAccessorTable<global::DBBagInfo, global::DBBagInfo.Builder>(internal__static_DBBagInfo__Descriptor,
               new string[] { "GridList", });
-      internal__static_DBRoleInfo__Descriptor = Descriptor.MessageTypes[3];
+      internal__static_DBDecorateItem__Descriptor = Descriptor.MessageTypes[3];
+      internal__static_DBDecorateItem__FieldAccessorTable = 
+          new pb::FieldAccess.FieldAccessorTable<global::DBDecorateItem, global::DBDecorateItem.Builder>(internal__static_DBDecorateItem__Descriptor,
+              new string[] { "Id", "Type", "EndTime", });
+      internal__static_DBDecorateItemList__Descriptor = Descriptor.MessageTypes[4];
+      internal__static_DBDecorateItemList__FieldAccessorTable = 
+          new pb::FieldAccess.FieldAccessorTable<global::DBDecorateItemList, global::DBDecorateItemList.Builder>(internal__static_DBDecorateItemList__Descriptor,
+              new string[] { "DecorateGrids", });
+      internal__static_DBDecorateBagInfo__Descriptor = Descriptor.MessageTypes[5];
+      internal__static_DBDecorateBagInfo__FieldAccessorTable = 
+          new pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagInfo, global::DBDecorateBagInfo.Builder>(internal__static_DBDecorateBagInfo__Descriptor,
+              new string[] { "BagGridList", });
+      internal__static_DBDecorateBagInfoList__Descriptor = Descriptor.MessageTypes[6];
+      internal__static_DBDecorateBagInfoList__FieldAccessorTable = 
+          new pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagInfoList, global::DBDecorateBagInfoList.Builder>(internal__static_DBDecorateBagInfoList__Descriptor,
+              new string[] { "DecorateBagList", });
+      internal__static_DBDecorateBagModuleInfo__Descriptor = Descriptor.MessageTypes[7];
+      internal__static_DBDecorateBagModuleInfo__FieldAccessorTable = 
+          new pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagModuleInfo, global::DBDecorateBagModuleInfo.Builder>(internal__static_DBDecorateBagModuleInfo__Descriptor,
+              new string[] { "DecorateBagInfoList", "TypeList", });
+      internal__static_DBDecorateBagVIPItem__Descriptor = Descriptor.MessageTypes[8];
+      internal__static_DBDecorateBagVIPItem__FieldAccessorTable = 
+          new pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagVIPItem, global::DBDecorateBagVIPItem.Builder>(internal__static_DBDecorateBagVIPItem__Descriptor,
+              new string[] { "Grade", "Exper", });
+      internal__static_DBDecorateBagVIPList__Descriptor = Descriptor.MessageTypes[9];
+      internal__static_DBDecorateBagVIPList__FieldAccessorTable = 
+          new pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagVIPList, global::DBDecorateBagVIPList.Builder>(internal__static_DBDecorateBagVIPList__Descriptor,
+              new string[] { "VIPItemList", });
+      internal__static_DBDecorateBagVIPInfo__Descriptor = Descriptor.MessageTypes[10];
+      internal__static_DBDecorateBagVIPInfo__FieldAccessorTable = 
+          new pb::FieldAccess.FieldAccessorTable<global::DBDecorateBagVIPInfo, global::DBDecorateBagVIPInfo.Builder>(internal__static_DBDecorateBagVIPInfo__Descriptor,
+              new string[] { "VIPListInfo", });
+      internal__static_DBRoleInfo__Descriptor = Descriptor.MessageTypes[11];
       internal__static_DBRoleInfo__FieldAccessorTable = 
           new pb::FieldAccess.FieldAccessorTable<global::DBRoleInfo, global::DBRoleInfo.Builder>(internal__static_DBRoleInfo__Descriptor,
-              new string[] { "UID", "Name", "Level", "Rank", "LevelExper", "RankExper", "BagInfo", });
+              new string[] { "UID", "Name", "Level", "Rank", "LevelExper", "RankExper", "BagInfo", "DecorateBagModuleInfo", "VIPInfo", });
       return null;
     };
     pbd::FileDescriptor.InternalBuildGeneratedFileFrom(descriptorData,
@@ -994,11 +1056,2580 @@ public sealed partial class DBBagInfo : pb::GeneratedMessage<DBBagInfo, DBBagInf
 }
 
 [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class DBDecorateItem : pb::GeneratedMessage<DBDecorateItem, DBDecorateItem.Builder> {
+  private DBDecorateItem() { }
+  private static readonly DBDecorateItem defaultInstance = new DBDecorateItem().MakeReadOnly();
+  private static readonly string[] _dBDecorateItemFieldNames = new string[] { "EndTime", "id", "type" };
+  private static readonly uint[] _dBDecorateItemFieldTags = new uint[] { 24, 8, 16 };
+  public static DBDecorateItem DefaultInstance {
+    get { return defaultInstance; }
+  }
+  
+  public override DBDecorateItem DefaultInstanceForType {
+    get { return DefaultInstance; }
+  }
+  
+  protected override DBDecorateItem ThisMessage {
+    get { return this; }
+  }
+  
+  public static pbd::MessageDescriptor Descriptor {
+    get { return global::DBmsg.internal__static_DBDecorateItem__Descriptor; }
+  }
+  
+  protected override pb::FieldAccess.FieldAccessorTable<DBDecorateItem, DBDecorateItem.Builder> InternalFieldAccessors {
+    get { return global::DBmsg.internal__static_DBDecorateItem__FieldAccessorTable; }
+  }
+  
+  public const int IdFieldNumber = 1;
+  private bool hasId;
+  private uint id_;
+  public bool HasId {
+    get { return hasId; }
+  }
+  [global::System.CLSCompliant(false)]
+  public uint Id {
+    get { return id_; }
+  }
+  
+  public const int TypeFieldNumber = 2;
+  private bool hasType;
+  private uint type_;
+  public bool HasType {
+    get { return hasType; }
+  }
+  [global::System.CLSCompliant(false)]
+  public uint Type {
+    get { return type_; }
+  }
+  
+  public const int EndTimeFieldNumber = 3;
+  private bool hasEndTime;
+  private ulong endTime_;
+  public bool HasEndTime {
+    get { return hasEndTime; }
+  }
+  [global::System.CLSCompliant(false)]
+  public ulong EndTime {
+    get { return endTime_; }
+  }
+  
+  public override bool IsInitialized {
+    get {
+      return true;
+    }
+  }
+  
+  public override void WriteTo(pb::ICodedOutputStream output) {
+    CalcSerializedSize();
+    string[] field_names = _dBDecorateItemFieldNames;
+    if (hasId) {
+      output.WriteUInt32(1, field_names[1], Id);
+    }
+    if (hasType) {
+      output.WriteUInt32(2, field_names[2], Type);
+    }
+    if (hasEndTime) {
+      output.WriteUInt64(3, field_names[0], EndTime);
+    }
+    UnknownFields.WriteTo(output);
+  }
+  
+  private int memoizedSerializedSize = -1;
+  public override int SerializedSize {
+    get {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+      return CalcSerializedSize();
+    }
+  }
+  
+  private int CalcSerializedSize() {
+    int size = memoizedSerializedSize;
+    if (size != -1) return size;
+    
+    size = 0;
+    if (hasId) {
+      size += pb::CodedOutputStream.ComputeUInt32Size(1, Id);
+    }
+    if (hasType) {
+      size += pb::CodedOutputStream.ComputeUInt32Size(2, Type);
+    }
+    if (hasEndTime) {
+      size += pb::CodedOutputStream.ComputeUInt64Size(3, EndTime);
+    }
+    size += UnknownFields.SerializedSize;
+    memoizedSerializedSize = size;
+    return size;
+  }
+  public static DBDecorateItem ParseFrom(pb::ByteString data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateItem ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateItem ParseFrom(byte[] data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateItem ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateItem ParseFrom(global::System.IO.Stream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateItem ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateItem ParseDelimitedFrom(global::System.IO.Stream input) {
+    return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+  }
+  public static DBDecorateItem ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+  }
+  public static DBDecorateItem ParseFrom(pb::ICodedInputStream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateItem ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  private DBDecorateItem MakeReadOnly() {
+    return this;
+  }
+  
+  public static Builder CreateBuilder() { return new Builder(); }
+  public override Builder ToBuilder() { return CreateBuilder(this); }
+  public override Builder CreateBuilderForType() { return new Builder(); }
+  public static Builder CreateBuilder(DBDecorateItem prototype) {
+    return new Builder(prototype);
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class Builder : pb::GeneratedBuilder<DBDecorateItem, Builder> {
+    protected override Builder ThisBuilder {
+      get { return this; }
+    }
+    public Builder() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+    }
+    internal Builder(DBDecorateItem cloneFrom) {
+      result = cloneFrom;
+      resultIsReadOnly = true;
+    }
+    
+    private bool resultIsReadOnly;
+    private DBDecorateItem result;
+    
+    private DBDecorateItem PrepareBuilder() {
+      if (resultIsReadOnly) {
+        DBDecorateItem original = result;
+        result = new DBDecorateItem();
+        resultIsReadOnly = false;
+        MergeFrom(original);
+      }
+      return result;
+    }
+    
+    public override bool IsInitialized {
+      get { return result.IsInitialized; }
+    }
+    
+    protected override DBDecorateItem MessageBeingBuilt {
+      get { return PrepareBuilder(); }
+    }
+    
+    public override Builder Clear() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+      return this;
+    }
+    
+    public override Builder Clone() {
+      if (resultIsReadOnly) {
+        return new Builder(result);
+      } else {
+        return new Builder().MergeFrom(result);
+      }
+    }
+    
+    public override pbd::MessageDescriptor DescriptorForType {
+      get { return global::DBDecorateItem.Descriptor; }
+    }
+    
+    public override DBDecorateItem DefaultInstanceForType {
+      get { return global::DBDecorateItem.DefaultInstance; }
+    }
+    
+    public override DBDecorateItem BuildPartial() {
+      if (resultIsReadOnly) {
+        return result;
+      }
+      resultIsReadOnly = true;
+      return result.MakeReadOnly();
+    }
+    
+    public override Builder MergeFrom(pb::IMessage other) {
+      if (other is DBDecorateItem) {
+        return MergeFrom((DBDecorateItem) other);
+      } else {
+        base.MergeFrom(other);
+        return this;
+      }
+    }
+    
+    public override Builder MergeFrom(DBDecorateItem other) {
+      if (other == global::DBDecorateItem.DefaultInstance) return this;
+      PrepareBuilder();
+      if (other.HasId) {
+        Id = other.Id;
+      }
+      if (other.HasType) {
+        Type = other.Type;
+      }
+      if (other.HasEndTime) {
+        EndTime = other.EndTime;
+      }
+      this.MergeUnknownFields(other.UnknownFields);
+      return this;
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input) {
+      return MergeFrom(input, pb::ExtensionRegistry.Empty);
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      PrepareBuilder();
+      pb::UnknownFieldSet.Builder unknownFields = null;
+      uint tag;
+      string field_name;
+      while (input.ReadTag(out tag, out field_name)) {
+        if(tag == 0 && field_name != null) {
+          int field_ordinal = global::System.Array.BinarySearch(_dBDecorateItemFieldNames, field_name, global::System.StringComparer.Ordinal);
+          if(field_ordinal >= 0)
+            tag = _dBDecorateItemFieldTags[field_ordinal];
+          else {
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            continue;
+          }
+        }
+        switch (tag) {
+          case 0: {
+            throw pb::InvalidProtocolBufferException.InvalidTag();
+          }
+          default: {
+            if (pb::WireFormat.IsEndGroupTag(tag)) {
+              if (unknownFields != null) {
+                this.UnknownFields = unknownFields.Build();
+              }
+              return this;
+            }
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            break;
+          }
+          case 8: {
+            result.hasId = input.ReadUInt32(ref result.id_);
+            break;
+          }
+          case 16: {
+            result.hasType = input.ReadUInt32(ref result.type_);
+            break;
+          }
+          case 24: {
+            result.hasEndTime = input.ReadUInt64(ref result.endTime_);
+            break;
+          }
+        }
+      }
+      
+      if (unknownFields != null) {
+        this.UnknownFields = unknownFields.Build();
+      }
+      return this;
+    }
+    
+    
+    public bool HasId {
+      get { return result.hasId; }
+    }
+    [global::System.CLSCompliant(false)]
+    public uint Id {
+      get { return result.Id; }
+      set { SetId(value); }
+    }
+    [global::System.CLSCompliant(false)]
+    public Builder SetId(uint value) {
+      PrepareBuilder();
+      result.hasId = true;
+      result.id_ = value;
+      return this;
+    }
+    public Builder ClearId() {
+      PrepareBuilder();
+      result.hasId = false;
+      result.id_ = 0;
+      return this;
+    }
+    
+    public bool HasType {
+      get { return result.hasType; }
+    }
+    [global::System.CLSCompliant(false)]
+    public uint Type {
+      get { return result.Type; }
+      set { SetType(value); }
+    }
+    [global::System.CLSCompliant(false)]
+    public Builder SetType(uint value) {
+      PrepareBuilder();
+      result.hasType = true;
+      result.type_ = value;
+      return this;
+    }
+    public Builder ClearType() {
+      PrepareBuilder();
+      result.hasType = false;
+      result.type_ = 0;
+      return this;
+    }
+    
+    public bool HasEndTime {
+      get { return result.hasEndTime; }
+    }
+    [global::System.CLSCompliant(false)]
+    public ulong EndTime {
+      get { return result.EndTime; }
+      set { SetEndTime(value); }
+    }
+    [global::System.CLSCompliant(false)]
+    public Builder SetEndTime(ulong value) {
+      PrepareBuilder();
+      result.hasEndTime = true;
+      result.endTime_ = value;
+      return this;
+    }
+    public Builder ClearEndTime() {
+      PrepareBuilder();
+      result.hasEndTime = false;
+      result.endTime_ = 0UL;
+      return this;
+    }
+  }
+  static DBDecorateItem() {
+    object.ReferenceEquals(global::DBmsg.Descriptor, null);
+  }
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class DBDecorateItemList : pb::GeneratedMessage<DBDecorateItemList, DBDecorateItemList.Builder> {
+  private DBDecorateItemList() { }
+  private static readonly DBDecorateItemList defaultInstance = new DBDecorateItemList().MakeReadOnly();
+  private static readonly string[] _dBDecorateItemListFieldNames = new string[] { "DecorateGrids" };
+  private static readonly uint[] _dBDecorateItemListFieldTags = new uint[] { 10 };
+  public static DBDecorateItemList DefaultInstance {
+    get { return defaultInstance; }
+  }
+  
+  public override DBDecorateItemList DefaultInstanceForType {
+    get { return DefaultInstance; }
+  }
+  
+  protected override DBDecorateItemList ThisMessage {
+    get { return this; }
+  }
+  
+  public static pbd::MessageDescriptor Descriptor {
+    get { return global::DBmsg.internal__static_DBDecorateItemList__Descriptor; }
+  }
+  
+  protected override pb::FieldAccess.FieldAccessorTable<DBDecorateItemList, DBDecorateItemList.Builder> InternalFieldAccessors {
+    get { return global::DBmsg.internal__static_DBDecorateItemList__FieldAccessorTable; }
+  }
+  
+  public const int DecorateGridsFieldNumber = 1;
+  private pbc::PopsicleList<global::DBDecorateItem> decorateGrids_ = new pbc::PopsicleList<global::DBDecorateItem>();
+  public scg::IList<global::DBDecorateItem> DecorateGridsList {
+    get { return decorateGrids_; }
+  }
+  public int DecorateGridsCount {
+    get { return decorateGrids_.Count; }
+  }
+  public global::DBDecorateItem GetDecorateGrids(int index) {
+    return decorateGrids_[index];
+  }
+  
+  public override bool IsInitialized {
+    get {
+      return true;
+    }
+  }
+  
+  public override void WriteTo(pb::ICodedOutputStream output) {
+    CalcSerializedSize();
+    string[] field_names = _dBDecorateItemListFieldNames;
+    if (decorateGrids_.Count > 0) {
+      output.WriteMessageArray(1, field_names[0], decorateGrids_);
+    }
+    UnknownFields.WriteTo(output);
+  }
+  
+  private int memoizedSerializedSize = -1;
+  public override int SerializedSize {
+    get {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+      return CalcSerializedSize();
+    }
+  }
+  
+  private int CalcSerializedSize() {
+    int size = memoizedSerializedSize;
+    if (size != -1) return size;
+    
+    size = 0;
+    foreach (global::DBDecorateItem element in DecorateGridsList) {
+      size += pb::CodedOutputStream.ComputeMessageSize(1, element);
+    }
+    size += UnknownFields.SerializedSize;
+    memoizedSerializedSize = size;
+    return size;
+  }
+  public static DBDecorateItemList ParseFrom(pb::ByteString data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateItemList ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateItemList ParseFrom(byte[] data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateItemList ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateItemList ParseFrom(global::System.IO.Stream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateItemList ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateItemList ParseDelimitedFrom(global::System.IO.Stream input) {
+    return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+  }
+  public static DBDecorateItemList ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+  }
+  public static DBDecorateItemList ParseFrom(pb::ICodedInputStream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateItemList ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  private DBDecorateItemList MakeReadOnly() {
+    decorateGrids_.MakeReadOnly();
+    return this;
+  }
+  
+  public static Builder CreateBuilder() { return new Builder(); }
+  public override Builder ToBuilder() { return CreateBuilder(this); }
+  public override Builder CreateBuilderForType() { return new Builder(); }
+  public static Builder CreateBuilder(DBDecorateItemList prototype) {
+    return new Builder(prototype);
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class Builder : pb::GeneratedBuilder<DBDecorateItemList, Builder> {
+    protected override Builder ThisBuilder {
+      get { return this; }
+    }
+    public Builder() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+    }
+    internal Builder(DBDecorateItemList cloneFrom) {
+      result = cloneFrom;
+      resultIsReadOnly = true;
+    }
+    
+    private bool resultIsReadOnly;
+    private DBDecorateItemList result;
+    
+    private DBDecorateItemList PrepareBuilder() {
+      if (resultIsReadOnly) {
+        DBDecorateItemList original = result;
+        result = new DBDecorateItemList();
+        resultIsReadOnly = false;
+        MergeFrom(original);
+      }
+      return result;
+    }
+    
+    public override bool IsInitialized {
+      get { return result.IsInitialized; }
+    }
+    
+    protected override DBDecorateItemList MessageBeingBuilt {
+      get { return PrepareBuilder(); }
+    }
+    
+    public override Builder Clear() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+      return this;
+    }
+    
+    public override Builder Clone() {
+      if (resultIsReadOnly) {
+        return new Builder(result);
+      } else {
+        return new Builder().MergeFrom(result);
+      }
+    }
+    
+    public override pbd::MessageDescriptor DescriptorForType {
+      get { return global::DBDecorateItemList.Descriptor; }
+    }
+    
+    public override DBDecorateItemList DefaultInstanceForType {
+      get { return global::DBDecorateItemList.DefaultInstance; }
+    }
+    
+    public override DBDecorateItemList BuildPartial() {
+      if (resultIsReadOnly) {
+        return result;
+      }
+      resultIsReadOnly = true;
+      return result.MakeReadOnly();
+    }
+    
+    public override Builder MergeFrom(pb::IMessage other) {
+      if (other is DBDecorateItemList) {
+        return MergeFrom((DBDecorateItemList) other);
+      } else {
+        base.MergeFrom(other);
+        return this;
+      }
+    }
+    
+    public override Builder MergeFrom(DBDecorateItemList other) {
+      if (other == global::DBDecorateItemList.DefaultInstance) return this;
+      PrepareBuilder();
+      if (other.decorateGrids_.Count != 0) {
+        result.decorateGrids_.Add(other.decorateGrids_);
+      }
+      this.MergeUnknownFields(other.UnknownFields);
+      return this;
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input) {
+      return MergeFrom(input, pb::ExtensionRegistry.Empty);
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      PrepareBuilder();
+      pb::UnknownFieldSet.Builder unknownFields = null;
+      uint tag;
+      string field_name;
+      while (input.ReadTag(out tag, out field_name)) {
+        if(tag == 0 && field_name != null) {
+          int field_ordinal = global::System.Array.BinarySearch(_dBDecorateItemListFieldNames, field_name, global::System.StringComparer.Ordinal);
+          if(field_ordinal >= 0)
+            tag = _dBDecorateItemListFieldTags[field_ordinal];
+          else {
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            continue;
+          }
+        }
+        switch (tag) {
+          case 0: {
+            throw pb::InvalidProtocolBufferException.InvalidTag();
+          }
+          default: {
+            if (pb::WireFormat.IsEndGroupTag(tag)) {
+              if (unknownFields != null) {
+                this.UnknownFields = unknownFields.Build();
+              }
+              return this;
+            }
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            break;
+          }
+          case 10: {
+            input.ReadMessageArray(tag, field_name, result.decorateGrids_, global::DBDecorateItem.DefaultInstance, extensionRegistry);
+            break;
+          }
+        }
+      }
+      
+      if (unknownFields != null) {
+        this.UnknownFields = unknownFields.Build();
+      }
+      return this;
+    }
+    
+    
+    public pbc::IPopsicleList<global::DBDecorateItem> DecorateGridsList {
+      get { return PrepareBuilder().decorateGrids_; }
+    }
+    public int DecorateGridsCount {
+      get { return result.DecorateGridsCount; }
+    }
+    public global::DBDecorateItem GetDecorateGrids(int index) {
+      return result.GetDecorateGrids(index);
+    }
+    public Builder SetDecorateGrids(int index, global::DBDecorateItem value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.decorateGrids_[index] = value;
+      return this;
+    }
+    public Builder SetDecorateGrids(int index, global::DBDecorateItem.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.decorateGrids_[index] = builderForValue.Build();
+      return this;
+    }
+    public Builder AddDecorateGrids(global::DBDecorateItem value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.decorateGrids_.Add(value);
+      return this;
+    }
+    public Builder AddDecorateGrids(global::DBDecorateItem.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.decorateGrids_.Add(builderForValue.Build());
+      return this;
+    }
+    public Builder AddRangeDecorateGrids(scg::IEnumerable<global::DBDecorateItem> values) {
+      PrepareBuilder();
+      result.decorateGrids_.Add(values);
+      return this;
+    }
+    public Builder ClearDecorateGrids() {
+      PrepareBuilder();
+      result.decorateGrids_.Clear();
+      return this;
+    }
+  }
+  static DBDecorateItemList() {
+    object.ReferenceEquals(global::DBmsg.Descriptor, null);
+  }
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class DBDecorateBagInfo : pb::GeneratedMessage<DBDecorateBagInfo, DBDecorateBagInfo.Builder> {
+  private DBDecorateBagInfo() { }
+  private static readonly DBDecorateBagInfo defaultInstance = new DBDecorateBagInfo().MakeReadOnly();
+  private static readonly string[] _dBDecorateBagInfoFieldNames = new string[] { "BagGridList" };
+  private static readonly uint[] _dBDecorateBagInfoFieldTags = new uint[] { 10 };
+  public static DBDecorateBagInfo DefaultInstance {
+    get { return defaultInstance; }
+  }
+  
+  public override DBDecorateBagInfo DefaultInstanceForType {
+    get { return DefaultInstance; }
+  }
+  
+  protected override DBDecorateBagInfo ThisMessage {
+    get { return this; }
+  }
+  
+  public static pbd::MessageDescriptor Descriptor {
+    get { return global::DBmsg.internal__static_DBDecorateBagInfo__Descriptor; }
+  }
+  
+  protected override pb::FieldAccess.FieldAccessorTable<DBDecorateBagInfo, DBDecorateBagInfo.Builder> InternalFieldAccessors {
+    get { return global::DBmsg.internal__static_DBDecorateBagInfo__FieldAccessorTable; }
+  }
+  
+  public const int BagGridListFieldNumber = 1;
+  private bool hasBagGridList;
+  private global::DBDecorateItemList bagGridList_;
+  public bool HasBagGridList {
+    get { return hasBagGridList; }
+  }
+  public global::DBDecorateItemList BagGridList {
+    get { return bagGridList_ ?? global::DBDecorateItemList.DefaultInstance; }
+  }
+  
+  public override bool IsInitialized {
+    get {
+      return true;
+    }
+  }
+  
+  public override void WriteTo(pb::ICodedOutputStream output) {
+    CalcSerializedSize();
+    string[] field_names = _dBDecorateBagInfoFieldNames;
+    if (hasBagGridList) {
+      output.WriteMessage(1, field_names[0], BagGridList);
+    }
+    UnknownFields.WriteTo(output);
+  }
+  
+  private int memoizedSerializedSize = -1;
+  public override int SerializedSize {
+    get {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+      return CalcSerializedSize();
+    }
+  }
+  
+  private int CalcSerializedSize() {
+    int size = memoizedSerializedSize;
+    if (size != -1) return size;
+    
+    size = 0;
+    if (hasBagGridList) {
+      size += pb::CodedOutputStream.ComputeMessageSize(1, BagGridList);
+    }
+    size += UnknownFields.SerializedSize;
+    memoizedSerializedSize = size;
+    return size;
+  }
+  public static DBDecorateBagInfo ParseFrom(pb::ByteString data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagInfo ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagInfo ParseFrom(byte[] data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagInfo ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagInfo ParseFrom(global::System.IO.Stream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagInfo ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagInfo ParseDelimitedFrom(global::System.IO.Stream input) {
+    return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+  }
+  public static DBDecorateBagInfo ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+  }
+  public static DBDecorateBagInfo ParseFrom(pb::ICodedInputStream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagInfo ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  private DBDecorateBagInfo MakeReadOnly() {
+    return this;
+  }
+  
+  public static Builder CreateBuilder() { return new Builder(); }
+  public override Builder ToBuilder() { return CreateBuilder(this); }
+  public override Builder CreateBuilderForType() { return new Builder(); }
+  public static Builder CreateBuilder(DBDecorateBagInfo prototype) {
+    return new Builder(prototype);
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class Builder : pb::GeneratedBuilder<DBDecorateBagInfo, Builder> {
+    protected override Builder ThisBuilder {
+      get { return this; }
+    }
+    public Builder() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+    }
+    internal Builder(DBDecorateBagInfo cloneFrom) {
+      result = cloneFrom;
+      resultIsReadOnly = true;
+    }
+    
+    private bool resultIsReadOnly;
+    private DBDecorateBagInfo result;
+    
+    private DBDecorateBagInfo PrepareBuilder() {
+      if (resultIsReadOnly) {
+        DBDecorateBagInfo original = result;
+        result = new DBDecorateBagInfo();
+        resultIsReadOnly = false;
+        MergeFrom(original);
+      }
+      return result;
+    }
+    
+    public override bool IsInitialized {
+      get { return result.IsInitialized; }
+    }
+    
+    protected override DBDecorateBagInfo MessageBeingBuilt {
+      get { return PrepareBuilder(); }
+    }
+    
+    public override Builder Clear() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+      return this;
+    }
+    
+    public override Builder Clone() {
+      if (resultIsReadOnly) {
+        return new Builder(result);
+      } else {
+        return new Builder().MergeFrom(result);
+      }
+    }
+    
+    public override pbd::MessageDescriptor DescriptorForType {
+      get { return global::DBDecorateBagInfo.Descriptor; }
+    }
+    
+    public override DBDecorateBagInfo DefaultInstanceForType {
+      get { return global::DBDecorateBagInfo.DefaultInstance; }
+    }
+    
+    public override DBDecorateBagInfo BuildPartial() {
+      if (resultIsReadOnly) {
+        return result;
+      }
+      resultIsReadOnly = true;
+      return result.MakeReadOnly();
+    }
+    
+    public override Builder MergeFrom(pb::IMessage other) {
+      if (other is DBDecorateBagInfo) {
+        return MergeFrom((DBDecorateBagInfo) other);
+      } else {
+        base.MergeFrom(other);
+        return this;
+      }
+    }
+    
+    public override Builder MergeFrom(DBDecorateBagInfo other) {
+      if (other == global::DBDecorateBagInfo.DefaultInstance) return this;
+      PrepareBuilder();
+      if (other.HasBagGridList) {
+        MergeBagGridList(other.BagGridList);
+      }
+      this.MergeUnknownFields(other.UnknownFields);
+      return this;
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input) {
+      return MergeFrom(input, pb::ExtensionRegistry.Empty);
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      PrepareBuilder();
+      pb::UnknownFieldSet.Builder unknownFields = null;
+      uint tag;
+      string field_name;
+      while (input.ReadTag(out tag, out field_name)) {
+        if(tag == 0 && field_name != null) {
+          int field_ordinal = global::System.Array.BinarySearch(_dBDecorateBagInfoFieldNames, field_name, global::System.StringComparer.Ordinal);
+          if(field_ordinal >= 0)
+            tag = _dBDecorateBagInfoFieldTags[field_ordinal];
+          else {
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            continue;
+          }
+        }
+        switch (tag) {
+          case 0: {
+            throw pb::InvalidProtocolBufferException.InvalidTag();
+          }
+          default: {
+            if (pb::WireFormat.IsEndGroupTag(tag)) {
+              if (unknownFields != null) {
+                this.UnknownFields = unknownFields.Build();
+              }
+              return this;
+            }
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            break;
+          }
+          case 10: {
+            global::DBDecorateItemList.Builder subBuilder = global::DBDecorateItemList.CreateBuilder();
+            if (result.hasBagGridList) {
+              subBuilder.MergeFrom(BagGridList);
+            }
+            input.ReadMessage(subBuilder, extensionRegistry);
+            BagGridList = subBuilder.BuildPartial();
+            break;
+          }
+        }
+      }
+      
+      if (unknownFields != null) {
+        this.UnknownFields = unknownFields.Build();
+      }
+      return this;
+    }
+    
+    
+    public bool HasBagGridList {
+     get { return result.hasBagGridList; }
+    }
+    public global::DBDecorateItemList BagGridList {
+      get { return result.BagGridList; }
+      set { SetBagGridList(value); }
+    }
+    public Builder SetBagGridList(global::DBDecorateItemList value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.hasBagGridList = true;
+      result.bagGridList_ = value;
+      return this;
+    }
+    public Builder SetBagGridList(global::DBDecorateItemList.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.hasBagGridList = true;
+      result.bagGridList_ = builderForValue.Build();
+      return this;
+    }
+    public Builder MergeBagGridList(global::DBDecorateItemList value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      if (result.hasBagGridList &&
+          result.bagGridList_ != global::DBDecorateItemList.DefaultInstance) {
+          result.bagGridList_ = global::DBDecorateItemList.CreateBuilder(result.bagGridList_).MergeFrom(value).BuildPartial();
+      } else {
+        result.bagGridList_ = value;
+      }
+      result.hasBagGridList = true;
+      return this;
+    }
+    public Builder ClearBagGridList() {
+      PrepareBuilder();
+      result.hasBagGridList = false;
+      result.bagGridList_ = null;
+      return this;
+    }
+  }
+  static DBDecorateBagInfo() {
+    object.ReferenceEquals(global::DBmsg.Descriptor, null);
+  }
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class DBDecorateBagInfoList : pb::GeneratedMessage<DBDecorateBagInfoList, DBDecorateBagInfoList.Builder> {
+  private DBDecorateBagInfoList() { }
+  private static readonly DBDecorateBagInfoList defaultInstance = new DBDecorateBagInfoList().MakeReadOnly();
+  private static readonly string[] _dBDecorateBagInfoListFieldNames = new string[] { "DecorateBagList" };
+  private static readonly uint[] _dBDecorateBagInfoListFieldTags = new uint[] { 10 };
+  public static DBDecorateBagInfoList DefaultInstance {
+    get { return defaultInstance; }
+  }
+  
+  public override DBDecorateBagInfoList DefaultInstanceForType {
+    get { return DefaultInstance; }
+  }
+  
+  protected override DBDecorateBagInfoList ThisMessage {
+    get { return this; }
+  }
+  
+  public static pbd::MessageDescriptor Descriptor {
+    get { return global::DBmsg.internal__static_DBDecorateBagInfoList__Descriptor; }
+  }
+  
+  protected override pb::FieldAccess.FieldAccessorTable<DBDecorateBagInfoList, DBDecorateBagInfoList.Builder> InternalFieldAccessors {
+    get { return global::DBmsg.internal__static_DBDecorateBagInfoList__FieldAccessorTable; }
+  }
+  
+  public const int DecorateBagListFieldNumber = 1;
+  private pbc::PopsicleList<global::DBDecorateBagInfo> decorateBagList_ = new pbc::PopsicleList<global::DBDecorateBagInfo>();
+  public scg::IList<global::DBDecorateBagInfo> DecorateBagListList {
+    get { return decorateBagList_; }
+  }
+  public int DecorateBagListCount {
+    get { return decorateBagList_.Count; }
+  }
+  public global::DBDecorateBagInfo GetDecorateBagList(int index) {
+    return decorateBagList_[index];
+  }
+  
+  public override bool IsInitialized {
+    get {
+      return true;
+    }
+  }
+  
+  public override void WriteTo(pb::ICodedOutputStream output) {
+    CalcSerializedSize();
+    string[] field_names = _dBDecorateBagInfoListFieldNames;
+    if (decorateBagList_.Count > 0) {
+      output.WriteMessageArray(1, field_names[0], decorateBagList_);
+    }
+    UnknownFields.WriteTo(output);
+  }
+  
+  private int memoizedSerializedSize = -1;
+  public override int SerializedSize {
+    get {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+      return CalcSerializedSize();
+    }
+  }
+  
+  private int CalcSerializedSize() {
+    int size = memoizedSerializedSize;
+    if (size != -1) return size;
+    
+    size = 0;
+    foreach (global::DBDecorateBagInfo element in DecorateBagListList) {
+      size += pb::CodedOutputStream.ComputeMessageSize(1, element);
+    }
+    size += UnknownFields.SerializedSize;
+    memoizedSerializedSize = size;
+    return size;
+  }
+  public static DBDecorateBagInfoList ParseFrom(pb::ByteString data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagInfoList ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagInfoList ParseFrom(byte[] data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagInfoList ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagInfoList ParseFrom(global::System.IO.Stream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagInfoList ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagInfoList ParseDelimitedFrom(global::System.IO.Stream input) {
+    return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+  }
+  public static DBDecorateBagInfoList ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+  }
+  public static DBDecorateBagInfoList ParseFrom(pb::ICodedInputStream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagInfoList ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  private DBDecorateBagInfoList MakeReadOnly() {
+    decorateBagList_.MakeReadOnly();
+    return this;
+  }
+  
+  public static Builder CreateBuilder() { return new Builder(); }
+  public override Builder ToBuilder() { return CreateBuilder(this); }
+  public override Builder CreateBuilderForType() { return new Builder(); }
+  public static Builder CreateBuilder(DBDecorateBagInfoList prototype) {
+    return new Builder(prototype);
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class Builder : pb::GeneratedBuilder<DBDecorateBagInfoList, Builder> {
+    protected override Builder ThisBuilder {
+      get { return this; }
+    }
+    public Builder() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+    }
+    internal Builder(DBDecorateBagInfoList cloneFrom) {
+      result = cloneFrom;
+      resultIsReadOnly = true;
+    }
+    
+    private bool resultIsReadOnly;
+    private DBDecorateBagInfoList result;
+    
+    private DBDecorateBagInfoList PrepareBuilder() {
+      if (resultIsReadOnly) {
+        DBDecorateBagInfoList original = result;
+        result = new DBDecorateBagInfoList();
+        resultIsReadOnly = false;
+        MergeFrom(original);
+      }
+      return result;
+    }
+    
+    public override bool IsInitialized {
+      get { return result.IsInitialized; }
+    }
+    
+    protected override DBDecorateBagInfoList MessageBeingBuilt {
+      get { return PrepareBuilder(); }
+    }
+    
+    public override Builder Clear() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+      return this;
+    }
+    
+    public override Builder Clone() {
+      if (resultIsReadOnly) {
+        return new Builder(result);
+      } else {
+        return new Builder().MergeFrom(result);
+      }
+    }
+    
+    public override pbd::MessageDescriptor DescriptorForType {
+      get { return global::DBDecorateBagInfoList.Descriptor; }
+    }
+    
+    public override DBDecorateBagInfoList DefaultInstanceForType {
+      get { return global::DBDecorateBagInfoList.DefaultInstance; }
+    }
+    
+    public override DBDecorateBagInfoList BuildPartial() {
+      if (resultIsReadOnly) {
+        return result;
+      }
+      resultIsReadOnly = true;
+      return result.MakeReadOnly();
+    }
+    
+    public override Builder MergeFrom(pb::IMessage other) {
+      if (other is DBDecorateBagInfoList) {
+        return MergeFrom((DBDecorateBagInfoList) other);
+      } else {
+        base.MergeFrom(other);
+        return this;
+      }
+    }
+    
+    public override Builder MergeFrom(DBDecorateBagInfoList other) {
+      if (other == global::DBDecorateBagInfoList.DefaultInstance) return this;
+      PrepareBuilder();
+      if (other.decorateBagList_.Count != 0) {
+        result.decorateBagList_.Add(other.decorateBagList_);
+      }
+      this.MergeUnknownFields(other.UnknownFields);
+      return this;
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input) {
+      return MergeFrom(input, pb::ExtensionRegistry.Empty);
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      PrepareBuilder();
+      pb::UnknownFieldSet.Builder unknownFields = null;
+      uint tag;
+      string field_name;
+      while (input.ReadTag(out tag, out field_name)) {
+        if(tag == 0 && field_name != null) {
+          int field_ordinal = global::System.Array.BinarySearch(_dBDecorateBagInfoListFieldNames, field_name, global::System.StringComparer.Ordinal);
+          if(field_ordinal >= 0)
+            tag = _dBDecorateBagInfoListFieldTags[field_ordinal];
+          else {
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            continue;
+          }
+        }
+        switch (tag) {
+          case 0: {
+            throw pb::InvalidProtocolBufferException.InvalidTag();
+          }
+          default: {
+            if (pb::WireFormat.IsEndGroupTag(tag)) {
+              if (unknownFields != null) {
+                this.UnknownFields = unknownFields.Build();
+              }
+              return this;
+            }
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            break;
+          }
+          case 10: {
+            input.ReadMessageArray(tag, field_name, result.decorateBagList_, global::DBDecorateBagInfo.DefaultInstance, extensionRegistry);
+            break;
+          }
+        }
+      }
+      
+      if (unknownFields != null) {
+        this.UnknownFields = unknownFields.Build();
+      }
+      return this;
+    }
+    
+    
+    public pbc::IPopsicleList<global::DBDecorateBagInfo> DecorateBagListList {
+      get { return PrepareBuilder().decorateBagList_; }
+    }
+    public int DecorateBagListCount {
+      get { return result.DecorateBagListCount; }
+    }
+    public global::DBDecorateBagInfo GetDecorateBagList(int index) {
+      return result.GetDecorateBagList(index);
+    }
+    public Builder SetDecorateBagList(int index, global::DBDecorateBagInfo value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.decorateBagList_[index] = value;
+      return this;
+    }
+    public Builder SetDecorateBagList(int index, global::DBDecorateBagInfo.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.decorateBagList_[index] = builderForValue.Build();
+      return this;
+    }
+    public Builder AddDecorateBagList(global::DBDecorateBagInfo value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.decorateBagList_.Add(value);
+      return this;
+    }
+    public Builder AddDecorateBagList(global::DBDecorateBagInfo.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.decorateBagList_.Add(builderForValue.Build());
+      return this;
+    }
+    public Builder AddRangeDecorateBagList(scg::IEnumerable<global::DBDecorateBagInfo> values) {
+      PrepareBuilder();
+      result.decorateBagList_.Add(values);
+      return this;
+    }
+    public Builder ClearDecorateBagList() {
+      PrepareBuilder();
+      result.decorateBagList_.Clear();
+      return this;
+    }
+  }
+  static DBDecorateBagInfoList() {
+    object.ReferenceEquals(global::DBmsg.Descriptor, null);
+  }
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class DBDecorateBagModuleInfo : pb::GeneratedMessage<DBDecorateBagModuleInfo, DBDecorateBagModuleInfo.Builder> {
+  private DBDecorateBagModuleInfo() { }
+  private static readonly DBDecorateBagModuleInfo defaultInstance = new DBDecorateBagModuleInfo().MakeReadOnly();
+  private static readonly string[] _dBDecorateBagModuleInfoFieldNames = new string[] { "DecorateBagInfoList", "TypeList" };
+  private static readonly uint[] _dBDecorateBagModuleInfoFieldTags = new uint[] { 10, 16 };
+  public static DBDecorateBagModuleInfo DefaultInstance {
+    get { return defaultInstance; }
+  }
+  
+  public override DBDecorateBagModuleInfo DefaultInstanceForType {
+    get { return DefaultInstance; }
+  }
+  
+  protected override DBDecorateBagModuleInfo ThisMessage {
+    get { return this; }
+  }
+  
+  public static pbd::MessageDescriptor Descriptor {
+    get { return global::DBmsg.internal__static_DBDecorateBagModuleInfo__Descriptor; }
+  }
+  
+  protected override pb::FieldAccess.FieldAccessorTable<DBDecorateBagModuleInfo, DBDecorateBagModuleInfo.Builder> InternalFieldAccessors {
+    get { return global::DBmsg.internal__static_DBDecorateBagModuleInfo__FieldAccessorTable; }
+  }
+  
+  public const int DecorateBagInfoListFieldNumber = 1;
+  private bool hasDecorateBagInfoList;
+  private global::DBDecorateBagInfoList decorateBagInfoList_;
+  public bool HasDecorateBagInfoList {
+    get { return hasDecorateBagInfoList; }
+  }
+  public global::DBDecorateBagInfoList DecorateBagInfoList {
+    get { return decorateBagInfoList_ ?? global::DBDecorateBagInfoList.DefaultInstance; }
+  }
+  
+  public const int TypeListFieldNumber = 2;
+  private pbc::PopsicleList<uint> typeList_ = new pbc::PopsicleList<uint>();
+  [global::System.CLSCompliant(false)]
+  public scg::IList<uint> TypeListList {
+    get { return pbc::Lists.AsReadOnly(typeList_); }
+  }
+  public int TypeListCount {
+    get { return typeList_.Count; }
+  }
+  [global::System.CLSCompliant(false)]
+  public uint GetTypeList(int index) {
+    return typeList_[index];
+  }
+  
+  public override bool IsInitialized {
+    get {
+      return true;
+    }
+  }
+  
+  public override void WriteTo(pb::ICodedOutputStream output) {
+    CalcSerializedSize();
+    string[] field_names = _dBDecorateBagModuleInfoFieldNames;
+    if (hasDecorateBagInfoList) {
+      output.WriteMessage(1, field_names[0], DecorateBagInfoList);
+    }
+    if (typeList_.Count > 0) {
+      output.WriteUInt32Array(2, field_names[1], typeList_);
+    }
+    UnknownFields.WriteTo(output);
+  }
+  
+  private int memoizedSerializedSize = -1;
+  public override int SerializedSize {
+    get {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+      return CalcSerializedSize();
+    }
+  }
+  
+  private int CalcSerializedSize() {
+    int size = memoizedSerializedSize;
+    if (size != -1) return size;
+    
+    size = 0;
+    if (hasDecorateBagInfoList) {
+      size += pb::CodedOutputStream.ComputeMessageSize(1, DecorateBagInfoList);
+    }
+    {
+      int dataSize = 0;
+      foreach (uint element in TypeListList) {
+        dataSize += pb::CodedOutputStream.ComputeUInt32SizeNoTag(element);
+      }
+      size += dataSize;
+      size += 1 * typeList_.Count;
+    }
+    size += UnknownFields.SerializedSize;
+    memoizedSerializedSize = size;
+    return size;
+  }
+  public static DBDecorateBagModuleInfo ParseFrom(pb::ByteString data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagModuleInfo ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagModuleInfo ParseFrom(byte[] data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagModuleInfo ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagModuleInfo ParseFrom(global::System.IO.Stream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagModuleInfo ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagModuleInfo ParseDelimitedFrom(global::System.IO.Stream input) {
+    return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+  }
+  public static DBDecorateBagModuleInfo ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+  }
+  public static DBDecorateBagModuleInfo ParseFrom(pb::ICodedInputStream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagModuleInfo ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  private DBDecorateBagModuleInfo MakeReadOnly() {
+    typeList_.MakeReadOnly();
+    return this;
+  }
+  
+  public static Builder CreateBuilder() { return new Builder(); }
+  public override Builder ToBuilder() { return CreateBuilder(this); }
+  public override Builder CreateBuilderForType() { return new Builder(); }
+  public static Builder CreateBuilder(DBDecorateBagModuleInfo prototype) {
+    return new Builder(prototype);
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class Builder : pb::GeneratedBuilder<DBDecorateBagModuleInfo, Builder> {
+    protected override Builder ThisBuilder {
+      get { return this; }
+    }
+    public Builder() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+    }
+    internal Builder(DBDecorateBagModuleInfo cloneFrom) {
+      result = cloneFrom;
+      resultIsReadOnly = true;
+    }
+    
+    private bool resultIsReadOnly;
+    private DBDecorateBagModuleInfo result;
+    
+    private DBDecorateBagModuleInfo PrepareBuilder() {
+      if (resultIsReadOnly) {
+        DBDecorateBagModuleInfo original = result;
+        result = new DBDecorateBagModuleInfo();
+        resultIsReadOnly = false;
+        MergeFrom(original);
+      }
+      return result;
+    }
+    
+    public override bool IsInitialized {
+      get { return result.IsInitialized; }
+    }
+    
+    protected override DBDecorateBagModuleInfo MessageBeingBuilt {
+      get { return PrepareBuilder(); }
+    }
+    
+    public override Builder Clear() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+      return this;
+    }
+    
+    public override Builder Clone() {
+      if (resultIsReadOnly) {
+        return new Builder(result);
+      } else {
+        return new Builder().MergeFrom(result);
+      }
+    }
+    
+    public override pbd::MessageDescriptor DescriptorForType {
+      get { return global::DBDecorateBagModuleInfo.Descriptor; }
+    }
+    
+    public override DBDecorateBagModuleInfo DefaultInstanceForType {
+      get { return global::DBDecorateBagModuleInfo.DefaultInstance; }
+    }
+    
+    public override DBDecorateBagModuleInfo BuildPartial() {
+      if (resultIsReadOnly) {
+        return result;
+      }
+      resultIsReadOnly = true;
+      return result.MakeReadOnly();
+    }
+    
+    public override Builder MergeFrom(pb::IMessage other) {
+      if (other is DBDecorateBagModuleInfo) {
+        return MergeFrom((DBDecorateBagModuleInfo) other);
+      } else {
+        base.MergeFrom(other);
+        return this;
+      }
+    }
+    
+    public override Builder MergeFrom(DBDecorateBagModuleInfo other) {
+      if (other == global::DBDecorateBagModuleInfo.DefaultInstance) return this;
+      PrepareBuilder();
+      if (other.HasDecorateBagInfoList) {
+        MergeDecorateBagInfoList(other.DecorateBagInfoList);
+      }
+      if (other.typeList_.Count != 0) {
+        result.typeList_.Add(other.typeList_);
+      }
+      this.MergeUnknownFields(other.UnknownFields);
+      return this;
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input) {
+      return MergeFrom(input, pb::ExtensionRegistry.Empty);
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      PrepareBuilder();
+      pb::UnknownFieldSet.Builder unknownFields = null;
+      uint tag;
+      string field_name;
+      while (input.ReadTag(out tag, out field_name)) {
+        if(tag == 0 && field_name != null) {
+          int field_ordinal = global::System.Array.BinarySearch(_dBDecorateBagModuleInfoFieldNames, field_name, global::System.StringComparer.Ordinal);
+          if(field_ordinal >= 0)
+            tag = _dBDecorateBagModuleInfoFieldTags[field_ordinal];
+          else {
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            continue;
+          }
+        }
+        switch (tag) {
+          case 0: {
+            throw pb::InvalidProtocolBufferException.InvalidTag();
+          }
+          default: {
+            if (pb::WireFormat.IsEndGroupTag(tag)) {
+              if (unknownFields != null) {
+                this.UnknownFields = unknownFields.Build();
+              }
+              return this;
+            }
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            break;
+          }
+          case 10: {
+            global::DBDecorateBagInfoList.Builder subBuilder = global::DBDecorateBagInfoList.CreateBuilder();
+            if (result.hasDecorateBagInfoList) {
+              subBuilder.MergeFrom(DecorateBagInfoList);
+            }
+            input.ReadMessage(subBuilder, extensionRegistry);
+            DecorateBagInfoList = subBuilder.BuildPartial();
+            break;
+          }
+          case 18:
+          case 16: {
+            input.ReadUInt32Array(tag, field_name, result.typeList_);
+            break;
+          }
+        }
+      }
+      
+      if (unknownFields != null) {
+        this.UnknownFields = unknownFields.Build();
+      }
+      return this;
+    }
+    
+    
+    public bool HasDecorateBagInfoList {
+     get { return result.hasDecorateBagInfoList; }
+    }
+    public global::DBDecorateBagInfoList DecorateBagInfoList {
+      get { return result.DecorateBagInfoList; }
+      set { SetDecorateBagInfoList(value); }
+    }
+    public Builder SetDecorateBagInfoList(global::DBDecorateBagInfoList value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.hasDecorateBagInfoList = true;
+      result.decorateBagInfoList_ = value;
+      return this;
+    }
+    public Builder SetDecorateBagInfoList(global::DBDecorateBagInfoList.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.hasDecorateBagInfoList = true;
+      result.decorateBagInfoList_ = builderForValue.Build();
+      return this;
+    }
+    public Builder MergeDecorateBagInfoList(global::DBDecorateBagInfoList value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      if (result.hasDecorateBagInfoList &&
+          result.decorateBagInfoList_ != global::DBDecorateBagInfoList.DefaultInstance) {
+          result.decorateBagInfoList_ = global::DBDecorateBagInfoList.CreateBuilder(result.decorateBagInfoList_).MergeFrom(value).BuildPartial();
+      } else {
+        result.decorateBagInfoList_ = value;
+      }
+      result.hasDecorateBagInfoList = true;
+      return this;
+    }
+    public Builder ClearDecorateBagInfoList() {
+      PrepareBuilder();
+      result.hasDecorateBagInfoList = false;
+      result.decorateBagInfoList_ = null;
+      return this;
+    }
+    
+    [global::System.CLSCompliant(false)]
+    public pbc::IPopsicleList<uint> TypeListList {
+      get { return PrepareBuilder().typeList_; }
+    }
+    public int TypeListCount {
+      get { return result.TypeListCount; }
+    }
+    [global::System.CLSCompliant(false)]
+    public uint GetTypeList(int index) {
+      return result.GetTypeList(index);
+    }
+    [global::System.CLSCompliant(false)]
+    public Builder SetTypeList(int index, uint value) {
+      PrepareBuilder();
+      result.typeList_[index] = value;
+      return this;
+    }
+    [global::System.CLSCompliant(false)]
+    public Builder AddTypeList(uint value) {
+      PrepareBuilder();
+      result.typeList_.Add(value);
+      return this;
+    }
+    [global::System.CLSCompliant(false)]
+    public Builder AddRangeTypeList(scg::IEnumerable<uint> values) {
+      PrepareBuilder();
+      result.typeList_.Add(values);
+      return this;
+    }
+    public Builder ClearTypeList() {
+      PrepareBuilder();
+      result.typeList_.Clear();
+      return this;
+    }
+  }
+  static DBDecorateBagModuleInfo() {
+    object.ReferenceEquals(global::DBmsg.Descriptor, null);
+  }
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class DBDecorateBagVIPItem : pb::GeneratedMessage<DBDecorateBagVIPItem, DBDecorateBagVIPItem.Builder> {
+  private DBDecorateBagVIPItem() { }
+  private static readonly DBDecorateBagVIPItem defaultInstance = new DBDecorateBagVIPItem().MakeReadOnly();
+  private static readonly string[] _dBDecorateBagVIPItemFieldNames = new string[] { "exper", "grade" };
+  private static readonly uint[] _dBDecorateBagVIPItemFieldTags = new uint[] { 16, 8 };
+  public static DBDecorateBagVIPItem DefaultInstance {
+    get { return defaultInstance; }
+  }
+  
+  public override DBDecorateBagVIPItem DefaultInstanceForType {
+    get { return DefaultInstance; }
+  }
+  
+  protected override DBDecorateBagVIPItem ThisMessage {
+    get { return this; }
+  }
+  
+  public static pbd::MessageDescriptor Descriptor {
+    get { return global::DBmsg.internal__static_DBDecorateBagVIPItem__Descriptor; }
+  }
+  
+  protected override pb::FieldAccess.FieldAccessorTable<DBDecorateBagVIPItem, DBDecorateBagVIPItem.Builder> InternalFieldAccessors {
+    get { return global::DBmsg.internal__static_DBDecorateBagVIPItem__FieldAccessorTable; }
+  }
+  
+  public const int GradeFieldNumber = 1;
+  private bool hasGrade;
+  private uint grade_;
+  public bool HasGrade {
+    get { return hasGrade; }
+  }
+  [global::System.CLSCompliant(false)]
+  public uint Grade {
+    get { return grade_; }
+  }
+  
+  public const int ExperFieldNumber = 2;
+  private bool hasExper;
+  private uint exper_;
+  public bool HasExper {
+    get { return hasExper; }
+  }
+  [global::System.CLSCompliant(false)]
+  public uint Exper {
+    get { return exper_; }
+  }
+  
+  public override bool IsInitialized {
+    get {
+      return true;
+    }
+  }
+  
+  public override void WriteTo(pb::ICodedOutputStream output) {
+    CalcSerializedSize();
+    string[] field_names = _dBDecorateBagVIPItemFieldNames;
+    if (hasGrade) {
+      output.WriteUInt32(1, field_names[1], Grade);
+    }
+    if (hasExper) {
+      output.WriteUInt32(2, field_names[0], Exper);
+    }
+    UnknownFields.WriteTo(output);
+  }
+  
+  private int memoizedSerializedSize = -1;
+  public override int SerializedSize {
+    get {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+      return CalcSerializedSize();
+    }
+  }
+  
+  private int CalcSerializedSize() {
+    int size = memoizedSerializedSize;
+    if (size != -1) return size;
+    
+    size = 0;
+    if (hasGrade) {
+      size += pb::CodedOutputStream.ComputeUInt32Size(1, Grade);
+    }
+    if (hasExper) {
+      size += pb::CodedOutputStream.ComputeUInt32Size(2, Exper);
+    }
+    size += UnknownFields.SerializedSize;
+    memoizedSerializedSize = size;
+    return size;
+  }
+  public static DBDecorateBagVIPItem ParseFrom(pb::ByteString data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagVIPItem ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagVIPItem ParseFrom(byte[] data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagVIPItem ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagVIPItem ParseFrom(global::System.IO.Stream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagVIPItem ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagVIPItem ParseDelimitedFrom(global::System.IO.Stream input) {
+    return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+  }
+  public static DBDecorateBagVIPItem ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+  }
+  public static DBDecorateBagVIPItem ParseFrom(pb::ICodedInputStream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagVIPItem ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  private DBDecorateBagVIPItem MakeReadOnly() {
+    return this;
+  }
+  
+  public static Builder CreateBuilder() { return new Builder(); }
+  public override Builder ToBuilder() { return CreateBuilder(this); }
+  public override Builder CreateBuilderForType() { return new Builder(); }
+  public static Builder CreateBuilder(DBDecorateBagVIPItem prototype) {
+    return new Builder(prototype);
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class Builder : pb::GeneratedBuilder<DBDecorateBagVIPItem, Builder> {
+    protected override Builder ThisBuilder {
+      get { return this; }
+    }
+    public Builder() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+    }
+    internal Builder(DBDecorateBagVIPItem cloneFrom) {
+      result = cloneFrom;
+      resultIsReadOnly = true;
+    }
+    
+    private bool resultIsReadOnly;
+    private DBDecorateBagVIPItem result;
+    
+    private DBDecorateBagVIPItem PrepareBuilder() {
+      if (resultIsReadOnly) {
+        DBDecorateBagVIPItem original = result;
+        result = new DBDecorateBagVIPItem();
+        resultIsReadOnly = false;
+        MergeFrom(original);
+      }
+      return result;
+    }
+    
+    public override bool IsInitialized {
+      get { return result.IsInitialized; }
+    }
+    
+    protected override DBDecorateBagVIPItem MessageBeingBuilt {
+      get { return PrepareBuilder(); }
+    }
+    
+    public override Builder Clear() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+      return this;
+    }
+    
+    public override Builder Clone() {
+      if (resultIsReadOnly) {
+        return new Builder(result);
+      } else {
+        return new Builder().MergeFrom(result);
+      }
+    }
+    
+    public override pbd::MessageDescriptor DescriptorForType {
+      get { return global::DBDecorateBagVIPItem.Descriptor; }
+    }
+    
+    public override DBDecorateBagVIPItem DefaultInstanceForType {
+      get { return global::DBDecorateBagVIPItem.DefaultInstance; }
+    }
+    
+    public override DBDecorateBagVIPItem BuildPartial() {
+      if (resultIsReadOnly) {
+        return result;
+      }
+      resultIsReadOnly = true;
+      return result.MakeReadOnly();
+    }
+    
+    public override Builder MergeFrom(pb::IMessage other) {
+      if (other is DBDecorateBagVIPItem) {
+        return MergeFrom((DBDecorateBagVIPItem) other);
+      } else {
+        base.MergeFrom(other);
+        return this;
+      }
+    }
+    
+    public override Builder MergeFrom(DBDecorateBagVIPItem other) {
+      if (other == global::DBDecorateBagVIPItem.DefaultInstance) return this;
+      PrepareBuilder();
+      if (other.HasGrade) {
+        Grade = other.Grade;
+      }
+      if (other.HasExper) {
+        Exper = other.Exper;
+      }
+      this.MergeUnknownFields(other.UnknownFields);
+      return this;
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input) {
+      return MergeFrom(input, pb::ExtensionRegistry.Empty);
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      PrepareBuilder();
+      pb::UnknownFieldSet.Builder unknownFields = null;
+      uint tag;
+      string field_name;
+      while (input.ReadTag(out tag, out field_name)) {
+        if(tag == 0 && field_name != null) {
+          int field_ordinal = global::System.Array.BinarySearch(_dBDecorateBagVIPItemFieldNames, field_name, global::System.StringComparer.Ordinal);
+          if(field_ordinal >= 0)
+            tag = _dBDecorateBagVIPItemFieldTags[field_ordinal];
+          else {
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            continue;
+          }
+        }
+        switch (tag) {
+          case 0: {
+            throw pb::InvalidProtocolBufferException.InvalidTag();
+          }
+          default: {
+            if (pb::WireFormat.IsEndGroupTag(tag)) {
+              if (unknownFields != null) {
+                this.UnknownFields = unknownFields.Build();
+              }
+              return this;
+            }
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            break;
+          }
+          case 8: {
+            result.hasGrade = input.ReadUInt32(ref result.grade_);
+            break;
+          }
+          case 16: {
+            result.hasExper = input.ReadUInt32(ref result.exper_);
+            break;
+          }
+        }
+      }
+      
+      if (unknownFields != null) {
+        this.UnknownFields = unknownFields.Build();
+      }
+      return this;
+    }
+    
+    
+    public bool HasGrade {
+      get { return result.hasGrade; }
+    }
+    [global::System.CLSCompliant(false)]
+    public uint Grade {
+      get { return result.Grade; }
+      set { SetGrade(value); }
+    }
+    [global::System.CLSCompliant(false)]
+    public Builder SetGrade(uint value) {
+      PrepareBuilder();
+      result.hasGrade = true;
+      result.grade_ = value;
+      return this;
+    }
+    public Builder ClearGrade() {
+      PrepareBuilder();
+      result.hasGrade = false;
+      result.grade_ = 0;
+      return this;
+    }
+    
+    public bool HasExper {
+      get { return result.hasExper; }
+    }
+    [global::System.CLSCompliant(false)]
+    public uint Exper {
+      get { return result.Exper; }
+      set { SetExper(value); }
+    }
+    [global::System.CLSCompliant(false)]
+    public Builder SetExper(uint value) {
+      PrepareBuilder();
+      result.hasExper = true;
+      result.exper_ = value;
+      return this;
+    }
+    public Builder ClearExper() {
+      PrepareBuilder();
+      result.hasExper = false;
+      result.exper_ = 0;
+      return this;
+    }
+  }
+  static DBDecorateBagVIPItem() {
+    object.ReferenceEquals(global::DBmsg.Descriptor, null);
+  }
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class DBDecorateBagVIPList : pb::GeneratedMessage<DBDecorateBagVIPList, DBDecorateBagVIPList.Builder> {
+  private DBDecorateBagVIPList() { }
+  private static readonly DBDecorateBagVIPList defaultInstance = new DBDecorateBagVIPList().MakeReadOnly();
+  private static readonly string[] _dBDecorateBagVIPListFieldNames = new string[] { "VIPItemList" };
+  private static readonly uint[] _dBDecorateBagVIPListFieldTags = new uint[] { 10 };
+  public static DBDecorateBagVIPList DefaultInstance {
+    get { return defaultInstance; }
+  }
+  
+  public override DBDecorateBagVIPList DefaultInstanceForType {
+    get { return DefaultInstance; }
+  }
+  
+  protected override DBDecorateBagVIPList ThisMessage {
+    get { return this; }
+  }
+  
+  public static pbd::MessageDescriptor Descriptor {
+    get { return global::DBmsg.internal__static_DBDecorateBagVIPList__Descriptor; }
+  }
+  
+  protected override pb::FieldAccess.FieldAccessorTable<DBDecorateBagVIPList, DBDecorateBagVIPList.Builder> InternalFieldAccessors {
+    get { return global::DBmsg.internal__static_DBDecorateBagVIPList__FieldAccessorTable; }
+  }
+  
+  public const int VIPItemListFieldNumber = 1;
+  private pbc::PopsicleList<global::DBDecorateBagVIPItem> vIPItemList_ = new pbc::PopsicleList<global::DBDecorateBagVIPItem>();
+  public scg::IList<global::DBDecorateBagVIPItem> VIPItemListList {
+    get { return vIPItemList_; }
+  }
+  public int VIPItemListCount {
+    get { return vIPItemList_.Count; }
+  }
+  public global::DBDecorateBagVIPItem GetVIPItemList(int index) {
+    return vIPItemList_[index];
+  }
+  
+  public override bool IsInitialized {
+    get {
+      return true;
+    }
+  }
+  
+  public override void WriteTo(pb::ICodedOutputStream output) {
+    CalcSerializedSize();
+    string[] field_names = _dBDecorateBagVIPListFieldNames;
+    if (vIPItemList_.Count > 0) {
+      output.WriteMessageArray(1, field_names[0], vIPItemList_);
+    }
+    UnknownFields.WriteTo(output);
+  }
+  
+  private int memoizedSerializedSize = -1;
+  public override int SerializedSize {
+    get {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+      return CalcSerializedSize();
+    }
+  }
+  
+  private int CalcSerializedSize() {
+    int size = memoizedSerializedSize;
+    if (size != -1) return size;
+    
+    size = 0;
+    foreach (global::DBDecorateBagVIPItem element in VIPItemListList) {
+      size += pb::CodedOutputStream.ComputeMessageSize(1, element);
+    }
+    size += UnknownFields.SerializedSize;
+    memoizedSerializedSize = size;
+    return size;
+  }
+  public static DBDecorateBagVIPList ParseFrom(pb::ByteString data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagVIPList ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagVIPList ParseFrom(byte[] data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagVIPList ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagVIPList ParseFrom(global::System.IO.Stream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagVIPList ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagVIPList ParseDelimitedFrom(global::System.IO.Stream input) {
+    return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+  }
+  public static DBDecorateBagVIPList ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+  }
+  public static DBDecorateBagVIPList ParseFrom(pb::ICodedInputStream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagVIPList ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  private DBDecorateBagVIPList MakeReadOnly() {
+    vIPItemList_.MakeReadOnly();
+    return this;
+  }
+  
+  public static Builder CreateBuilder() { return new Builder(); }
+  public override Builder ToBuilder() { return CreateBuilder(this); }
+  public override Builder CreateBuilderForType() { return new Builder(); }
+  public static Builder CreateBuilder(DBDecorateBagVIPList prototype) {
+    return new Builder(prototype);
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class Builder : pb::GeneratedBuilder<DBDecorateBagVIPList, Builder> {
+    protected override Builder ThisBuilder {
+      get { return this; }
+    }
+    public Builder() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+    }
+    internal Builder(DBDecorateBagVIPList cloneFrom) {
+      result = cloneFrom;
+      resultIsReadOnly = true;
+    }
+    
+    private bool resultIsReadOnly;
+    private DBDecorateBagVIPList result;
+    
+    private DBDecorateBagVIPList PrepareBuilder() {
+      if (resultIsReadOnly) {
+        DBDecorateBagVIPList original = result;
+        result = new DBDecorateBagVIPList();
+        resultIsReadOnly = false;
+        MergeFrom(original);
+      }
+      return result;
+    }
+    
+    public override bool IsInitialized {
+      get { return result.IsInitialized; }
+    }
+    
+    protected override DBDecorateBagVIPList MessageBeingBuilt {
+      get { return PrepareBuilder(); }
+    }
+    
+    public override Builder Clear() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+      return this;
+    }
+    
+    public override Builder Clone() {
+      if (resultIsReadOnly) {
+        return new Builder(result);
+      } else {
+        return new Builder().MergeFrom(result);
+      }
+    }
+    
+    public override pbd::MessageDescriptor DescriptorForType {
+      get { return global::DBDecorateBagVIPList.Descriptor; }
+    }
+    
+    public override DBDecorateBagVIPList DefaultInstanceForType {
+      get { return global::DBDecorateBagVIPList.DefaultInstance; }
+    }
+    
+    public override DBDecorateBagVIPList BuildPartial() {
+      if (resultIsReadOnly) {
+        return result;
+      }
+      resultIsReadOnly = true;
+      return result.MakeReadOnly();
+    }
+    
+    public override Builder MergeFrom(pb::IMessage other) {
+      if (other is DBDecorateBagVIPList) {
+        return MergeFrom((DBDecorateBagVIPList) other);
+      } else {
+        base.MergeFrom(other);
+        return this;
+      }
+    }
+    
+    public override Builder MergeFrom(DBDecorateBagVIPList other) {
+      if (other == global::DBDecorateBagVIPList.DefaultInstance) return this;
+      PrepareBuilder();
+      if (other.vIPItemList_.Count != 0) {
+        result.vIPItemList_.Add(other.vIPItemList_);
+      }
+      this.MergeUnknownFields(other.UnknownFields);
+      return this;
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input) {
+      return MergeFrom(input, pb::ExtensionRegistry.Empty);
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      PrepareBuilder();
+      pb::UnknownFieldSet.Builder unknownFields = null;
+      uint tag;
+      string field_name;
+      while (input.ReadTag(out tag, out field_name)) {
+        if(tag == 0 && field_name != null) {
+          int field_ordinal = global::System.Array.BinarySearch(_dBDecorateBagVIPListFieldNames, field_name, global::System.StringComparer.Ordinal);
+          if(field_ordinal >= 0)
+            tag = _dBDecorateBagVIPListFieldTags[field_ordinal];
+          else {
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            continue;
+          }
+        }
+        switch (tag) {
+          case 0: {
+            throw pb::InvalidProtocolBufferException.InvalidTag();
+          }
+          default: {
+            if (pb::WireFormat.IsEndGroupTag(tag)) {
+              if (unknownFields != null) {
+                this.UnknownFields = unknownFields.Build();
+              }
+              return this;
+            }
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            break;
+          }
+          case 10: {
+            input.ReadMessageArray(tag, field_name, result.vIPItemList_, global::DBDecorateBagVIPItem.DefaultInstance, extensionRegistry);
+            break;
+          }
+        }
+      }
+      
+      if (unknownFields != null) {
+        this.UnknownFields = unknownFields.Build();
+      }
+      return this;
+    }
+    
+    
+    public pbc::IPopsicleList<global::DBDecorateBagVIPItem> VIPItemListList {
+      get { return PrepareBuilder().vIPItemList_; }
+    }
+    public int VIPItemListCount {
+      get { return result.VIPItemListCount; }
+    }
+    public global::DBDecorateBagVIPItem GetVIPItemList(int index) {
+      return result.GetVIPItemList(index);
+    }
+    public Builder SetVIPItemList(int index, global::DBDecorateBagVIPItem value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.vIPItemList_[index] = value;
+      return this;
+    }
+    public Builder SetVIPItemList(int index, global::DBDecorateBagVIPItem.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.vIPItemList_[index] = builderForValue.Build();
+      return this;
+    }
+    public Builder AddVIPItemList(global::DBDecorateBagVIPItem value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.vIPItemList_.Add(value);
+      return this;
+    }
+    public Builder AddVIPItemList(global::DBDecorateBagVIPItem.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.vIPItemList_.Add(builderForValue.Build());
+      return this;
+    }
+    public Builder AddRangeVIPItemList(scg::IEnumerable<global::DBDecorateBagVIPItem> values) {
+      PrepareBuilder();
+      result.vIPItemList_.Add(values);
+      return this;
+    }
+    public Builder ClearVIPItemList() {
+      PrepareBuilder();
+      result.vIPItemList_.Clear();
+      return this;
+    }
+  }
+  static DBDecorateBagVIPList() {
+    object.ReferenceEquals(global::DBmsg.Descriptor, null);
+  }
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+public sealed partial class DBDecorateBagVIPInfo : pb::GeneratedMessage<DBDecorateBagVIPInfo, DBDecorateBagVIPInfo.Builder> {
+  private DBDecorateBagVIPInfo() { }
+  private static readonly DBDecorateBagVIPInfo defaultInstance = new DBDecorateBagVIPInfo().MakeReadOnly();
+  private static readonly string[] _dBDecorateBagVIPInfoFieldNames = new string[] { "VIPListInfo" };
+  private static readonly uint[] _dBDecorateBagVIPInfoFieldTags = new uint[] { 10 };
+  public static DBDecorateBagVIPInfo DefaultInstance {
+    get { return defaultInstance; }
+  }
+  
+  public override DBDecorateBagVIPInfo DefaultInstanceForType {
+    get { return DefaultInstance; }
+  }
+  
+  protected override DBDecorateBagVIPInfo ThisMessage {
+    get { return this; }
+  }
+  
+  public static pbd::MessageDescriptor Descriptor {
+    get { return global::DBmsg.internal__static_DBDecorateBagVIPInfo__Descriptor; }
+  }
+  
+  protected override pb::FieldAccess.FieldAccessorTable<DBDecorateBagVIPInfo, DBDecorateBagVIPInfo.Builder> InternalFieldAccessors {
+    get { return global::DBmsg.internal__static_DBDecorateBagVIPInfo__FieldAccessorTable; }
+  }
+  
+  public const int VIPListInfoFieldNumber = 1;
+  private bool hasVIPListInfo;
+  private global::DBDecorateBagVIPList vIPListInfo_;
+  public bool HasVIPListInfo {
+    get { return hasVIPListInfo; }
+  }
+  public global::DBDecorateBagVIPList VIPListInfo {
+    get { return vIPListInfo_ ?? global::DBDecorateBagVIPList.DefaultInstance; }
+  }
+  
+  public override bool IsInitialized {
+    get {
+      return true;
+    }
+  }
+  
+  public override void WriteTo(pb::ICodedOutputStream output) {
+    CalcSerializedSize();
+    string[] field_names = _dBDecorateBagVIPInfoFieldNames;
+    if (hasVIPListInfo) {
+      output.WriteMessage(1, field_names[0], VIPListInfo);
+    }
+    UnknownFields.WriteTo(output);
+  }
+  
+  private int memoizedSerializedSize = -1;
+  public override int SerializedSize {
+    get {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+      return CalcSerializedSize();
+    }
+  }
+  
+  private int CalcSerializedSize() {
+    int size = memoizedSerializedSize;
+    if (size != -1) return size;
+    
+    size = 0;
+    if (hasVIPListInfo) {
+      size += pb::CodedOutputStream.ComputeMessageSize(1, VIPListInfo);
+    }
+    size += UnknownFields.SerializedSize;
+    memoizedSerializedSize = size;
+    return size;
+  }
+  public static DBDecorateBagVIPInfo ParseFrom(pb::ByteString data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagVIPInfo ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagVIPInfo ParseFrom(byte[] data) {
+    return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+  }
+  public static DBDecorateBagVIPInfo ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagVIPInfo ParseFrom(global::System.IO.Stream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagVIPInfo ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  public static DBDecorateBagVIPInfo ParseDelimitedFrom(global::System.IO.Stream input) {
+    return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+  }
+  public static DBDecorateBagVIPInfo ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+  }
+  public static DBDecorateBagVIPInfo ParseFrom(pb::ICodedInputStream input) {
+    return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+  }
+  public static DBDecorateBagVIPInfo ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+    return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+  }
+  private DBDecorateBagVIPInfo MakeReadOnly() {
+    return this;
+  }
+  
+  public static Builder CreateBuilder() { return new Builder(); }
+  public override Builder ToBuilder() { return CreateBuilder(this); }
+  public override Builder CreateBuilderForType() { return new Builder(); }
+  public static Builder CreateBuilder(DBDecorateBagVIPInfo prototype) {
+    return new Builder(prototype);
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class Builder : pb::GeneratedBuilder<DBDecorateBagVIPInfo, Builder> {
+    protected override Builder ThisBuilder {
+      get { return this; }
+    }
+    public Builder() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+    }
+    internal Builder(DBDecorateBagVIPInfo cloneFrom) {
+      result = cloneFrom;
+      resultIsReadOnly = true;
+    }
+    
+    private bool resultIsReadOnly;
+    private DBDecorateBagVIPInfo result;
+    
+    private DBDecorateBagVIPInfo PrepareBuilder() {
+      if (resultIsReadOnly) {
+        DBDecorateBagVIPInfo original = result;
+        result = new DBDecorateBagVIPInfo();
+        resultIsReadOnly = false;
+        MergeFrom(original);
+      }
+      return result;
+    }
+    
+    public override bool IsInitialized {
+      get { return result.IsInitialized; }
+    }
+    
+    protected override DBDecorateBagVIPInfo MessageBeingBuilt {
+      get { return PrepareBuilder(); }
+    }
+    
+    public override Builder Clear() {
+      result = DefaultInstance;
+      resultIsReadOnly = true;
+      return this;
+    }
+    
+    public override Builder Clone() {
+      if (resultIsReadOnly) {
+        return new Builder(result);
+      } else {
+        return new Builder().MergeFrom(result);
+      }
+    }
+    
+    public override pbd::MessageDescriptor DescriptorForType {
+      get { return global::DBDecorateBagVIPInfo.Descriptor; }
+    }
+    
+    public override DBDecorateBagVIPInfo DefaultInstanceForType {
+      get { return global::DBDecorateBagVIPInfo.DefaultInstance; }
+    }
+    
+    public override DBDecorateBagVIPInfo BuildPartial() {
+      if (resultIsReadOnly) {
+        return result;
+      }
+      resultIsReadOnly = true;
+      return result.MakeReadOnly();
+    }
+    
+    public override Builder MergeFrom(pb::IMessage other) {
+      if (other is DBDecorateBagVIPInfo) {
+        return MergeFrom((DBDecorateBagVIPInfo) other);
+      } else {
+        base.MergeFrom(other);
+        return this;
+      }
+    }
+    
+    public override Builder MergeFrom(DBDecorateBagVIPInfo other) {
+      if (other == global::DBDecorateBagVIPInfo.DefaultInstance) return this;
+      PrepareBuilder();
+      if (other.HasVIPListInfo) {
+        MergeVIPListInfo(other.VIPListInfo);
+      }
+      this.MergeUnknownFields(other.UnknownFields);
+      return this;
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input) {
+      return MergeFrom(input, pb::ExtensionRegistry.Empty);
+    }
+    
+    public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      PrepareBuilder();
+      pb::UnknownFieldSet.Builder unknownFields = null;
+      uint tag;
+      string field_name;
+      while (input.ReadTag(out tag, out field_name)) {
+        if(tag == 0 && field_name != null) {
+          int field_ordinal = global::System.Array.BinarySearch(_dBDecorateBagVIPInfoFieldNames, field_name, global::System.StringComparer.Ordinal);
+          if(field_ordinal >= 0)
+            tag = _dBDecorateBagVIPInfoFieldTags[field_ordinal];
+          else {
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            continue;
+          }
+        }
+        switch (tag) {
+          case 0: {
+            throw pb::InvalidProtocolBufferException.InvalidTag();
+          }
+          default: {
+            if (pb::WireFormat.IsEndGroupTag(tag)) {
+              if (unknownFields != null) {
+                this.UnknownFields = unknownFields.Build();
+              }
+              return this;
+            }
+            if (unknownFields == null) {
+              unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+            }
+            ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+            break;
+          }
+          case 10: {
+            global::DBDecorateBagVIPList.Builder subBuilder = global::DBDecorateBagVIPList.CreateBuilder();
+            if (result.hasVIPListInfo) {
+              subBuilder.MergeFrom(VIPListInfo);
+            }
+            input.ReadMessage(subBuilder, extensionRegistry);
+            VIPListInfo = subBuilder.BuildPartial();
+            break;
+          }
+        }
+      }
+      
+      if (unknownFields != null) {
+        this.UnknownFields = unknownFields.Build();
+      }
+      return this;
+    }
+    
+    
+    public bool HasVIPListInfo {
+     get { return result.hasVIPListInfo; }
+    }
+    public global::DBDecorateBagVIPList VIPListInfo {
+      get { return result.VIPListInfo; }
+      set { SetVIPListInfo(value); }
+    }
+    public Builder SetVIPListInfo(global::DBDecorateBagVIPList value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.hasVIPListInfo = true;
+      result.vIPListInfo_ = value;
+      return this;
+    }
+    public Builder SetVIPListInfo(global::DBDecorateBagVIPList.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.hasVIPListInfo = true;
+      result.vIPListInfo_ = builderForValue.Build();
+      return this;
+    }
+    public Builder MergeVIPListInfo(global::DBDecorateBagVIPList value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      if (result.hasVIPListInfo &&
+          result.vIPListInfo_ != global::DBDecorateBagVIPList.DefaultInstance) {
+          result.vIPListInfo_ = global::DBDecorateBagVIPList.CreateBuilder(result.vIPListInfo_).MergeFrom(value).BuildPartial();
+      } else {
+        result.vIPListInfo_ = value;
+      }
+      result.hasVIPListInfo = true;
+      return this;
+    }
+    public Builder ClearVIPListInfo() {
+      PrepareBuilder();
+      result.hasVIPListInfo = false;
+      result.vIPListInfo_ = null;
+      return this;
+    }
+  }
+  static DBDecorateBagVIPInfo() {
+    object.ReferenceEquals(global::DBmsg.Descriptor, null);
+  }
+}
+
+[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
 public sealed partial class DBRoleInfo : pb::GeneratedMessage<DBRoleInfo, DBRoleInfo.Builder> {
   private DBRoleInfo() { }
   private static readonly DBRoleInfo defaultInstance = new DBRoleInfo().MakeReadOnly();
-  private static readonly string[] _dBRoleInfoFieldNames = new string[] { "BagInfo", "Level", "LevelExper", "Name", "Rank", "RankExper", "UID" };
-  private static readonly uint[] _dBRoleInfoFieldTags = new uint[] { 58, 24, 40, 18, 32, 48, 8 };
+  private static readonly string[] _dBRoleInfoFieldNames = new string[] { "BagInfo", "DecorateBagModuleInfo", "Level", "LevelExper", "Name", "Rank", "RankExper", "UID", "VIPInfo" };
+  private static readonly uint[] _dBRoleInfoFieldTags = new uint[] { 58, 66, 24, 40, 18, 32, 48, 8, 74 };
   public static DBRoleInfo DefaultInstance {
     get { return defaultInstance; }
   }
@@ -1094,6 +3725,26 @@ public sealed partial class DBRoleInfo : pb::GeneratedMessage<DBRoleInfo, DBRole
     get { return bagInfo_ ?? global::DBBagInfo.DefaultInstance; }
   }
   
+  public const int DecorateBagModuleInfoFieldNumber = 8;
+  private bool hasDecorateBagModuleInfo;
+  private global::DBDecorateBagModuleInfo decorateBagModuleInfo_;
+  public bool HasDecorateBagModuleInfo {
+    get { return hasDecorateBagModuleInfo; }
+  }
+  public global::DBDecorateBagModuleInfo DecorateBagModuleInfo {
+    get { return decorateBagModuleInfo_ ?? global::DBDecorateBagModuleInfo.DefaultInstance; }
+  }
+  
+  public const int VIPInfoFieldNumber = 9;
+  private bool hasVIPInfo;
+  private global::DBDecorateBagVIPInfo vIPInfo_;
+  public bool HasVIPInfo {
+    get { return hasVIPInfo; }
+  }
+  public global::DBDecorateBagVIPInfo VIPInfo {
+    get { return vIPInfo_ ?? global::DBDecorateBagVIPInfo.DefaultInstance; }
+  }
+  
   public override bool IsInitialized {
     get {
       return true;
@@ -1104,25 +3755,31 @@ public sealed partial class DBRoleInfo : pb::GeneratedMessage<DBRoleInfo, DBRole
     CalcSerializedSize();
     string[] field_names = _dBRoleInfoFieldNames;
     if (hasUID) {
-      output.WriteUInt64(1, field_names[6], UID);
+      output.WriteUInt64(1, field_names[7], UID);
     }
     if (hasName) {
-      output.WriteString(2, field_names[3], Name);
+      output.WriteString(2, field_names[4], Name);
     }
     if (hasLevel) {
-      output.WriteUInt32(3, field_names[1], Level);
+      output.WriteUInt32(3, field_names[2], Level);
     }
     if (hasRank) {
-      output.WriteUInt32(4, field_names[4], Rank);
+      output.WriteUInt32(4, field_names[5], Rank);
     }
     if (hasLevelExper) {
-      output.WriteUInt32(5, field_names[2], LevelExper);
+      output.WriteUInt32(5, field_names[3], LevelExper);
     }
     if (hasRankExper) {
-      output.WriteUInt32(6, field_names[5], RankExper);
+      output.WriteUInt32(6, field_names[6], RankExper);
     }
     if (hasBagInfo) {
       output.WriteMessage(7, field_names[0], BagInfo);
+    }
+    if (hasDecorateBagModuleInfo) {
+      output.WriteMessage(8, field_names[1], DecorateBagModuleInfo);
+    }
+    if (hasVIPInfo) {
+      output.WriteMessage(9, field_names[8], VIPInfo);
     }
     UnknownFields.WriteTo(output);
   }
@@ -1161,6 +3818,12 @@ public sealed partial class DBRoleInfo : pb::GeneratedMessage<DBRoleInfo, DBRole
     }
     if (hasBagInfo) {
       size += pb::CodedOutputStream.ComputeMessageSize(7, BagInfo);
+    }
+    if (hasDecorateBagModuleInfo) {
+      size += pb::CodedOutputStream.ComputeMessageSize(8, DecorateBagModuleInfo);
+    }
+    if (hasVIPInfo) {
+      size += pb::CodedOutputStream.ComputeMessageSize(9, VIPInfo);
     }
     size += UnknownFields.SerializedSize;
     memoizedSerializedSize = size;
@@ -1305,6 +3968,12 @@ public sealed partial class DBRoleInfo : pb::GeneratedMessage<DBRoleInfo, DBRole
       if (other.HasBagInfo) {
         MergeBagInfo(other.BagInfo);
       }
+      if (other.HasDecorateBagModuleInfo) {
+        MergeDecorateBagModuleInfo(other.DecorateBagModuleInfo);
+      }
+      if (other.HasVIPInfo) {
+        MergeVIPInfo(other.VIPInfo);
+      }
       this.MergeUnknownFields(other.UnknownFields);
       return this;
     }
@@ -1379,6 +4048,24 @@ public sealed partial class DBRoleInfo : pb::GeneratedMessage<DBRoleInfo, DBRole
             }
             input.ReadMessage(subBuilder, extensionRegistry);
             BagInfo = subBuilder.BuildPartial();
+            break;
+          }
+          case 66: {
+            global::DBDecorateBagModuleInfo.Builder subBuilder = global::DBDecorateBagModuleInfo.CreateBuilder();
+            if (result.hasDecorateBagModuleInfo) {
+              subBuilder.MergeFrom(DecorateBagModuleInfo);
+            }
+            input.ReadMessage(subBuilder, extensionRegistry);
+            DecorateBagModuleInfo = subBuilder.BuildPartial();
+            break;
+          }
+          case 74: {
+            global::DBDecorateBagVIPInfo.Builder subBuilder = global::DBDecorateBagVIPInfo.CreateBuilder();
+            if (result.hasVIPInfo) {
+              subBuilder.MergeFrom(VIPInfo);
+            }
+            input.ReadMessage(subBuilder, extensionRegistry);
+            VIPInfo = subBuilder.BuildPartial();
             break;
           }
         }
@@ -1559,6 +4246,86 @@ public sealed partial class DBRoleInfo : pb::GeneratedMessage<DBRoleInfo, DBRole
       PrepareBuilder();
       result.hasBagInfo = false;
       result.bagInfo_ = null;
+      return this;
+    }
+    
+    public bool HasDecorateBagModuleInfo {
+     get { return result.hasDecorateBagModuleInfo; }
+    }
+    public global::DBDecorateBagModuleInfo DecorateBagModuleInfo {
+      get { return result.DecorateBagModuleInfo; }
+      set { SetDecorateBagModuleInfo(value); }
+    }
+    public Builder SetDecorateBagModuleInfo(global::DBDecorateBagModuleInfo value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.hasDecorateBagModuleInfo = true;
+      result.decorateBagModuleInfo_ = value;
+      return this;
+    }
+    public Builder SetDecorateBagModuleInfo(global::DBDecorateBagModuleInfo.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.hasDecorateBagModuleInfo = true;
+      result.decorateBagModuleInfo_ = builderForValue.Build();
+      return this;
+    }
+    public Builder MergeDecorateBagModuleInfo(global::DBDecorateBagModuleInfo value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      if (result.hasDecorateBagModuleInfo &&
+          result.decorateBagModuleInfo_ != global::DBDecorateBagModuleInfo.DefaultInstance) {
+          result.decorateBagModuleInfo_ = global::DBDecorateBagModuleInfo.CreateBuilder(result.decorateBagModuleInfo_).MergeFrom(value).BuildPartial();
+      } else {
+        result.decorateBagModuleInfo_ = value;
+      }
+      result.hasDecorateBagModuleInfo = true;
+      return this;
+    }
+    public Builder ClearDecorateBagModuleInfo() {
+      PrepareBuilder();
+      result.hasDecorateBagModuleInfo = false;
+      result.decorateBagModuleInfo_ = null;
+      return this;
+    }
+    
+    public bool HasVIPInfo {
+     get { return result.hasVIPInfo; }
+    }
+    public global::DBDecorateBagVIPInfo VIPInfo {
+      get { return result.VIPInfo; }
+      set { SetVIPInfo(value); }
+    }
+    public Builder SetVIPInfo(global::DBDecorateBagVIPInfo value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      result.hasVIPInfo = true;
+      result.vIPInfo_ = value;
+      return this;
+    }
+    public Builder SetVIPInfo(global::DBDecorateBagVIPInfo.Builder builderForValue) {
+      pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      PrepareBuilder();
+      result.hasVIPInfo = true;
+      result.vIPInfo_ = builderForValue.Build();
+      return this;
+    }
+    public Builder MergeVIPInfo(global::DBDecorateBagVIPInfo value) {
+      pb::ThrowHelper.ThrowIfNull(value, "value");
+      PrepareBuilder();
+      if (result.hasVIPInfo &&
+          result.vIPInfo_ != global::DBDecorateBagVIPInfo.DefaultInstance) {
+          result.vIPInfo_ = global::DBDecorateBagVIPInfo.CreateBuilder(result.vIPInfo_).MergeFrom(value).BuildPartial();
+      } else {
+        result.vIPInfo_ = value;
+      }
+      result.hasVIPInfo = true;
+      return this;
+    }
+    public Builder ClearVIPInfo() {
+      PrepareBuilder();
+      result.hasVIPInfo = false;
+      result.vIPInfo_ = null;
       return this;
     }
   }
